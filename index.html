@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TettPå">
 <meta name="theme-color" content="#0e5b61">
-<title>TettPå iPhone · versjon 205</title>
+<title>TettPå iPhone · versjon 225</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1203,13 +1203,85 @@ html.dark{
 .mcdc-h .n.zero{background:#d9e1e0;color:var(--muted)}
 .mcdc-b{padding:5px 7px;background:#f2f5f4}
 .mc-mgrp{margin-bottom:5px}
-.mc-mtab{display:inline-flex;align-items:center;gap:6px;background:#e7f1f1;border:1.5px solid #b9d0d1;border-bottom:none;border-radius:9px 9px 0 0;padding:3px 11px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--petrol);margin-left:6px}
+.mc-mtab{display:flex;width:100%;align-items:center;gap:6px;background:#e7f1f1;border:1.5px solid #b9d0d1;border-bottom:none;border-radius:9px 9px 0 0;padding:3px 11px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--petrol);margin-left:0}
 .mc-mtab .mc-grip svg{width:11px;height:11px}
 .mc-mtx{display:inline-flex;gap:3px;margin-left:6px}
 .mc-mbox{border:1.5px solid #b9d0d1;border-radius:0 9px 9px 9px;background:#fbfdfc;padding:4px 5px;min-height:14px}
 .mc-mbox .mc-row:last-child{margin-bottom:0}
 .mc-mtab.mc-dragging{outline:2px dashed var(--amber);outline-offset:2px}
 .mc-2grid{display:grid;grid-template-columns:1fr;gap:8px}
+.mc-mvinfo{background:#fdf3e6;border:1.5px solid #efd9b8;border-radius:9px;padding:7px 10px;font-size:12px;color:#8a5413;font-weight:600;margin-bottom:9px}
+.mc-pri{width:19px;height:19px;border-radius:5px;border:none;padding:0;font-family:inherit;color:#fff;font-size:10.5px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.mc-pri.none{background:var(--paper,#fff);border:1.5px dashed var(--line);color:var(--muted)}
+.mc-strek{display:flex;align-items:center;gap:7px;padding:5px 4px;margin-bottom:3px}
+.mc-strek .l{flex:1;height:2.5px;background:var(--petrol);opacity:.4;border-radius:2px}
+.mc-strek.mc-dragging{outline:2px dashed var(--amber);outline-offset:2px}
+.mc-todochip .mc-morel{background:#2f6fb0;color:#fff;border-radius:8px;font-size:9px;font-weight:800;padding:0 5px;margin-left:3px}
+.mc-pmenu{position:fixed;z-index:600;background:var(--paper,#fff);border:1.5px solid var(--line);border-radius:10px;box-shadow:0 12px 30px rgba(13,40,46,.25);overflow:hidden;width:200px}
+.mc-pmi{display:flex;align-items:center;gap:8px;padding:10px 13px;font-size:12.5px;font-weight:700;border-bottom:1px solid var(--linesoft,#eef2f1)}
+.mc-pmi:last-child{border-bottom:none}
+.mc-pmi.on{background:#e7f1f1}
+.mc-pmi .b{width:19px;height:19px;border-radius:5px;color:#fff;font-size:11px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.mc-pmi .none{width:19px;height:19px;border-radius:5px;border:1.5px dashed var(--line);color:var(--muted);display:inline-flex;align-items:center;justify-content:center;font-size:10px;flex:0 0 auto}
+.mc-klk{background:#e9e4f4;color:#4c3a80;border-radius:6px;font-size:10.5px;font-weight:800;padding:1px 6px;flex:0 0 auto;margin-right:2px}
+.mc-tomb,.mc-dgb{border:1.5px solid var(--line);background:#fff;border-radius:7px;font-size:9px;font-weight:800;color:var(--petrol);padding:2px 5px;white-space:nowrap;flex:0 0 auto}
+.mc-dgb{color:#4c3a80;border-color:#cfc4e8;background:#f6f3fc}
+.mc-dgb.on{background:#4c3a80;color:#fff;border-color:#4c3a80}
+.mc-mtab.kl{background:#e9e4f4;color:#4c3a80}
+.mc-fold{width:26px;height:26px;border:1.5px solid #c9dcdd;border-radius:6px;background:#fff;color:var(--petrol);font-size:12px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:0;line-height:1}
+.mc-sm{font-size:8.5px;padding:1px 4px;border-radius:6px;border-width:1px}
+.mc-dglapp{background:#fdf3e6;color:#8a5413;border:1px solid #f0ddc2;border-radius:6px;font-size:8.5px;font-weight:800;padding:1px 5px;flex:0 0 auto;white-space:nowrap}
+.mc-naa{border:1.5px solid #e2b6b1;background:#fbe9e7;color:#a33b32;border-radius:6px;font-size:9.5px;font-weight:800;padding:2px 6px;flex:0 0 auto;white-space:nowrap}
+.mc-mtab.naa{background:#fbe9e7;color:#a33b32}
+.mc-sm2del{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:6px;font-size:10px;font-weight:800;padding:4px 9px;flex:0 0 auto}
+.dk-row{display:flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:9px;padding:7px 10px;margin-bottom:4px;font-size:13px;font-weight:700;background:#fff}
+.dk-row .dk-n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dk-row .dk-u{font-size:10px;color:var(--muted);font-weight:700;flex:0 0 auto}
+.mc-knytb{display:inline-flex;align-items:center;gap:2px;min-width:24px;height:20px;padding:0 4px;background:#e8f1fa;color:#2f6fb0;border:1.5px solid #bcd2e8;border-radius:6px;font-size:10px;flex:0 0 auto}
+.mc-knytb svg{width:11px;height:11px}
+.mc-knytb b{font-size:9px;font-weight:800}
+.mc-soki{border:1.5px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12.5px;font-weight:600;background:#fff}
+.dk-open{display:flex;align-items:center;gap:8px;width:100%;border:2px solid var(--petrol);background:#e7f1f1;border-radius:11px;padding:10px 13px;font-size:13.5px;font-weight:800;color:var(--petrol);margin:0 0 10px}
+.dk-open .dk-cnt{margin-left:auto;background:var(--petrol);color:#fff;border-radius:9px;font-size:10px;padding:1px 8px}
+.dk-open svg{width:16px;height:16px;flex:0 0 auto}
+.mc-lchip.sm{font-size:9.5px;padding:2px 6px;gap:3px}
+.mc-lchip.sm svg{width:9px;height:9px}
+.abc-subtabs{display:flex;gap:4px;margin:0 0 10px}
+.abc-subtabs .ast{flex:1;text-align:center;border:1.5px solid var(--line);background:#fff;border-radius:9px;font-size:11.5px;font-weight:800;color:var(--petrol);padding:9px 4px}
+.abc-subtabs .ast.on{background:var(--petrol);color:#fff;border-color:var(--petrol)}
+.dk-nr{width:18px;height:18px;border-radius:5px;background:#e7f1f1;color:var(--petrol);font-size:9px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.mc-klk.mini{font-size:8px;padding:0 4px}
+.mc-knytb.mini{min-width:16px;height:15px;font-size:8px;border-radius:5px;padding:0 3px}
+.mc-knytb.mini svg{width:8px;height:8px}
+.mc-knytb.mini b{font-size:8px}
+.mc-dglapp.mini{font-size:7.5px;padding:0 4px}
+.mc-row .mc-acts{margin-left:auto;display:inline-flex;align-items:center;gap:3px;flex:0 0 auto}
+.abcg{border:1.5px solid var(--line);border-left:5px solid var(--petrol);border-radius:10px;background:#fff;margin-bottom:8px;overflow:hidden;box-shadow:none}
+.abcg-h{display:flex;align-items:center;gap:7px;padding:7px 10px;font-size:12px;font-weight:800;color:var(--ink);background:#fff;border-bottom:1.5px solid #eef2f1;border-radius:0}
+.abcg.closed .abcg-h{border-bottom:none}
+.abcg-h .bb{width:19px;height:19px;border-radius:5px;color:#fff;font-size:10px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;border:none;background:var(--muted)}
+.abcg-h .c{margin-left:auto;background:#eef2f1;color:var(--ink);border-radius:8px;font-size:10px;font-weight:800;padding:1px 8px;min-width:0}
+.abcg-h .abcg-chev{color:var(--muted)}
+.abcg-b{border:none;border-radius:0;padding:3px 6px}
+.abcrow{padding:4px 5px;font-size:12.5px;border-radius:7px}
+.abcsw button{width:18px;height:18px;font-size:9px;border-radius:5px}
+.krow2{display:flex;align-items:center;gap:7px;border:1.5px solid var(--line);border-radius:8px;padding:5px 9px;margin-bottom:3px;font-size:12.5px;font-weight:700;background:#fff}
+.krow2 .dot{width:12px;height:12px;border-radius:4px;flex:0 0 auto}
+.krow2 .k2n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.krow2 .k2u{font-size:9px;color:var(--muted);font-weight:700;flex:0 0 auto}
+.dk-row{padding:5px 9px;margin-bottom:3px;font-size:12.5px}
+.dk-row .dk-u2{font-size:9px;color:var(--muted);font-weight:700;flex:0 0 auto}
+.krow2{padding:3px 8px}
+.dk-row{padding:3px 8px}
+.krow2 .ib,.dk-row .ib{padding:2px}
+.krow2 .ib svg,.dk-row .ib svg{width:13px;height:13px}
+.pk-bar{height:6px;border-radius:4px;background:#e4ecea;overflow:hidden;margin-top:4px}
+.pk-bar i{display:block;height:100%;background:#2f8f5b}
+.mc-fcnt{background:var(--petrol);color:#fff;border-radius:8px;min-width:18px;height:16px;font-size:9.5px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;padding:0 5px;flex:0 0 auto}
+.mc-prow{display:flex;gap:6px}
+.mc-pb{flex:1;border:1.5px solid var(--line);border-radius:9px;padding:9px 4px;font-size:11.5px;font-weight:800;background:var(--paper,#fff);display:inline-flex;align-items:center;justify-content:center;gap:6px;font-family:inherit}
+.mc-pb .b{width:19px;height:19px;border-radius:5px;color:#fff;font-size:11px;display:inline-flex;align-items:center;justify-content:center}
+.mc-pb.on{border-color:var(--petrol);background:#e7f1f1}
 .mcdc-b .mc-row{border:1.5px solid #cfd9d7;border-radius:8px;margin-bottom:3px;background:var(--paper,#fff);box-shadow:0 1px 3px rgba(13,40,46,.07)}
 .mcdc-b .mc-row:last-child{margin-bottom:0}
 .mcdc-b .mc-row b{font-weight:600}
@@ -1238,7 +1310,7 @@ html.dark{
 .mc-eye svg{width:13px;height:13px}
 .mc-notepr{border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;min-height:100px;font-size:13.5px;line-height:1.55;background:var(--paper,#fff)}
 .mc-notepr.tom::before{content:'Trykk for å skrive notat…';color:var(--muted)}
-.mc-notepr ul{margin:4px 0 4px 18px}
+.mc-notepr ul{margin:4px 0;padding-left:16px}
 .mc-dcard{border:1.5px solid var(--line);border-radius:11px;overflow:hidden;margin-bottom:9px}
 .mc-dcard-h{display:flex;align-items:center;gap:7px;padding:7px 11px;background:var(--mist);font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--petrol)}
 .mc-dcard-h svg{width:12px;height:12px}
@@ -1255,7 +1327,7 @@ html.dark{
 .mcbox-h .x{margin-left:auto;width:28px;height:28px;border:1.5px solid var(--line);border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:var(--muted);background:var(--paper,#fff);padding:0}
 .mctxt-ta{width:100%;border:2px solid var(--petrol);border-radius:11px;padding:13px 14px;font-size:16px;font-weight:600;font-family:inherit;min-height:100px;resize:vertical;box-sizing:border-box}
 .mctxt-ed{border:2px solid var(--petrol);border-radius:11px;padding:12px 14px;font-size:14.5px;min-height:160px;line-height:1.6;outline:none;background:var(--paper,#fff)}
-.mctxt-ed ul{margin:4px 0 4px 18px}
+.mctxt-ed ul{margin:4px 0;padding-left:16px}
 .mctxt-tb{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap;align-items:center;border:1.5px solid var(--line);border-radius:11px;padding:7px 8px;background:var(--mist,#eef2f0)}
 .mctxt-col{width:20px;height:20px;border-radius:50%;border:1.5px solid rgba(0,0,0,.15);padding:0;flex:0 0 auto}
 .mctxt-sep{width:1.5px;height:20px;background:var(--line);display:inline-block;flex:0 0 auto}
@@ -1278,7 +1350,7 @@ html.dark{
 .mctxt-btns{display:flex;justify-content:flex-end;gap:8px;margin-top:11px}
 .mc-dimb{width:28px;height:28px;border:1.5px solid var(--line);border-radius:8px;background:var(--paper,#fff);color:var(--petrol);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:0}
 .mc-dimb.on{background:#8a97a3;border-color:#8a97a3;color:#fff}
-.mc-row b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.mc-row b{min-width:56px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
 .mc-row.done b{text-decoration:line-through;color:var(--muted)}
 .mc-chk{width:calc(var(--mcfs,13.5px) + 7.5px);height:calc(var(--mcfs,13.5px) + 7.5px);border:2px solid var(--line);border-radius:8px;background:transparent;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;color:#fff;padding:0}
 .mc-chk.on{background:#2f8f5b;border-color:#2f8f5b}
@@ -1423,7 +1495,7 @@ html.dark{
 <div class="toast" id="toast"></div>
 
 <script>
-const BUILD_NO=205, BUILD_DATE='23.07.2026';
+const BUILD_NO=225, BUILD_DATE='19.08.2026';
 const I={
   plus:'<path d="M12 5v14M5 12h14"/>',
   x:'<path d="M18 6L6 18M6 6l12 12"/>',
@@ -1571,7 +1643,7 @@ function todoSyncPayload(withImages){
   const deleted=(db.todoDeleted||[]).filter(d=>(now-(d.deletedAt||0))<TODO_TOMB_MS);
   const _timeArr=(db.time||[]).map(e=>{const c=Object.assign({},e);if(!c.updated)c.updated=c.created||0;return c;});
   const _timeDel=(db.timeDeleted||[]).filter(x=>(now-(x.deletedAt||0))<TODO_TOMB_MS);
-  return {app:TODO_SYNC_APP,version:TODO_SYNC_VER,source:TODO_SOURCE,exportedAt:now,withImages:!!withImages,cats:(db.todoCats||[]).map(c=>c.slice()),abcCats:abcCats().map(c=>c.slice()),tags:(db.todoTags||[]).map(t=>t.slice()),dividers:(db.todoDividers||[]).map(d=>({id:d.id,label:d.label,ord:d.ord,tile:d.tile||null,num:d.num!=null?d.num:null,abc:d.abc||null,mtime:d.mtime})),layout:{tiles:db.meta.todoHomeTiles||null,cats:db.meta.todoHomeCats||null,mode:db.meta.todoHomeMode||null,tileSize:db.meta.todoHomeTileSize||null,panelTextSize:db.meta.todoPanelTextSize||null,panelRowPad:db.meta.todoPanelRowPad||null,listMode:db.meta.todoListMode||null,numSort:!!db.meta.todoPanelNumSort,hideDone:!!db.meta.todoPanelHideDone,rowBtns:db.meta.todoRowBtns!==false,divText:db.meta.todoDivShowText,divEdit:db.meta.todoDivShowEdit,divDel:db.meta.todoDivShowDel,icons:db.meta.todoHomeIcons!==false},time:_timeArr,timeDeleted:_timeDel,minical:(Array.isArray(db.minical)?db.minical:[]).map(a=>Object.assign({},a)),todos,deleted};
+  return {app:TODO_SYNC_APP,version:TODO_SYNC_VER,source:TODO_SOURCE,exportedAt:now,withImages:!!withImages,cats:(db.todoCats||[]).map(c=>c.slice()),abcCats:abcCats().map(c=>c.slice()),tags:(db.todoTags||[]).map(t=>t.slice()),dividers:(db.todoDividers||[]).map(d=>({id:d.id,label:d.label,ord:d.ord,tile:d.tile||null,num:d.num!=null?d.num:null,abc:d.abc||null,mtime:d.mtime})),layout:{tiles:db.meta.todoHomeTiles||null,cats:db.meta.todoHomeCats||null,mode:db.meta.todoHomeMode||null,tileSize:db.meta.todoHomeTileSize||null,panelTextSize:db.meta.todoPanelTextSize||null,panelRowPad:db.meta.todoPanelRowPad||null,listMode:db.meta.todoListMode||null,numSort:!!db.meta.todoPanelNumSort,hideDone:!!db.meta.todoPanelHideDone,rowBtns:db.meta.todoRowBtns!==false,divText:db.meta.todoDivShowText,divEdit:db.meta.todoDivShowEdit,divDel:db.meta.todoDivShowDel,icons:db.meta.todoHomeIcons!==false},time:_timeArr,timeDeleted:_timeDel,minical:(Array.isArray(db.minical)?db.minical:[]).map(a=>Object.assign({},a)),divkart:(db.divkart||[]).map(k=>Object.assign({},k)),pakkeLists:(db.pakkeLists||[]).map(k=>Object.assign({},k)),pakkeItems:(db.pakkeItems||[]).map(k=>Object.assign({},k)),todos,deleted};
 }
 let syncResult='', syncFrom='', _syncImportName='';
 function todoSyncExport(withImages){
@@ -1613,6 +1685,9 @@ function todoSyncApply(raw){
   if(_syncImportName){db.meta.todoLastImport={name:_syncImportName,at:Date.now()};_syncImportName='';}
   db.todos.forEach(t=>{if(t.prio===undefined)t.prio=t.abc||'';});
   if(Array.isArray(d.minical)){if(!Array.isArray(db.minical))db.minical=[];d.minical.forEach(x=>{if(!x||!x.id)return;const ex=db.minical.find(y=>y.id===x.id);if(!ex)db.minical.push(Object.assign({},x));else{const im=x.updated||x.created||0;if(im>(ex.updated||ex.created||0))Object.assign(ex,x);}});}
+  if(Array.isArray(d.divkart)){const loc=db.divkart||[];const ids=new Set(d.divkart.filter(k=>k&&k.id).map(k=>k.id));db.divkart=d.divkart.filter(k=>k&&k.id).map(k=>Object.assign({},k)).concat(loc.filter(k=>!ids.has(k.id)));}
+  if(Array.isArray(d.pakkeLists)){const loc2=db.pakkeLists||[];const ids2=new Set(d.pakkeLists.filter(k=>k&&k.id).map(k=>k.id));db.pakkeLists=d.pakkeLists.filter(k=>k&&k.id).map(k=>Object.assign({},k)).concat(loc2.filter(k=>!ids2.has(k.id)));}
+  if(Array.isArray(d.pakkeItems)){const loc3=db.pakkeItems||[];const ids3=new Set(d.pakkeItems.filter(k=>k&&k.id).map(k=>k.id));db.pakkeItems=d.pakkeItems.filter(k=>k&&k.id).map(k=>Object.assign({},k)).concat(loc3.filter(k=>!ids3.has(k.id)));}
 if(d.layout){const L=d.layout;if(Array.isArray(L.tiles))db.meta.todoHomeTiles=L.tiles.slice();if(Array.isArray(L.cats))db.meta.todoHomeCats=L.cats.slice();if(L.mode)db.meta.todoHomeMode=L.mode;if(L.tileSize)db.meta.todoHomeTileSize=L.tileSize;if(L.panelTextSize)db.meta.todoPanelTextSize=L.panelTextSize;if(L.panelRowPad)db.meta.todoPanelRowPad=L.panelRowPad;if(L.listMode)db.meta.todoListMode=L.listMode;if(L.numSort!==undefined)db.meta.todoPanelNumSort=L.numSort;if(L.hideDone!==undefined)db.meta.todoPanelHideDone=L.hideDone;if(L.rowBtns!==undefined)db.meta.todoRowBtns=L.rowBtns;if(L.divText!==undefined)db.meta.todoDivShowText=L.divText;if(L.divEdit!==undefined)db.meta.todoDivShowEdit=L.divEdit;if(L.divDel!==undefined)db.meta.todoDivShowDel=L.divDel;if(L.icons!==undefined)db.meta.todoHomeIcons=L.icons;}
   if(Array.isArray(d.time)||Array.isArray(d.timeDeleted)){
     if(!Array.isArray(db.time))db.time=[];
@@ -1648,6 +1723,9 @@ function todoSyncReplace(raw){
   db.meta.todoLastSync=Date.now();db.meta.filter='alle';db.meta.sort=db.meta.sort||'abc';
   if(_syncImportName){db.meta.todoLastImport={name:_syncImportName,at:Date.now()};_syncImportName='';}
   if(Array.isArray(d.minical)){if(!Array.isArray(db.minical))db.minical=[];d.minical.forEach(x=>{if(!x||!x.id)return;const ex=db.minical.find(y=>y.id===x.id);if(!ex)db.minical.push(Object.assign({},x));else{const im=x.updated||x.created||0;if(im>(ex.updated||ex.created||0))Object.assign(ex,x);}});}
+  if(Array.isArray(d.divkart)){const loc=db.divkart||[];const ids=new Set(d.divkart.filter(k=>k&&k.id).map(k=>k.id));db.divkart=d.divkart.filter(k=>k&&k.id).map(k=>Object.assign({},k)).concat(loc.filter(k=>!ids.has(k.id)));}
+  if(Array.isArray(d.pakkeLists)){const loc2=db.pakkeLists||[];const ids2=new Set(d.pakkeLists.filter(k=>k&&k.id).map(k=>k.id));db.pakkeLists=d.pakkeLists.filter(k=>k&&k.id).map(k=>Object.assign({},k)).concat(loc2.filter(k=>!ids2.has(k.id)));}
+  if(Array.isArray(d.pakkeItems)){const loc3=db.pakkeItems||[];const ids3=new Set(d.pakkeItems.filter(k=>k&&k.id).map(k=>k.id));db.pakkeItems=d.pakkeItems.filter(k=>k&&k.id).map(k=>Object.assign({},k)).concat(loc3.filter(k=>!ids3.has(k.id)));}
 if(d.layout){const L=d.layout;if(Array.isArray(L.tiles))db.meta.todoHomeTiles=L.tiles.slice();if(Array.isArray(L.cats))db.meta.todoHomeCats=L.cats.slice();if(L.mode)db.meta.todoHomeMode=L.mode;if(L.tileSize)db.meta.todoHomeTileSize=L.tileSize;if(L.panelTextSize)db.meta.todoPanelTextSize=L.panelTextSize;if(L.panelRowPad)db.meta.todoPanelRowPad=L.panelRowPad;if(L.listMode)db.meta.todoListMode=L.listMode;if(L.numSort!==undefined)db.meta.todoPanelNumSort=L.numSort;if(L.hideDone!==undefined)db.meta.todoPanelHideDone=L.hideDone;if(L.rowBtns!==undefined)db.meta.todoRowBtns=L.rowBtns;if(L.divText!==undefined)db.meta.todoDivShowText=L.divText;if(L.divEdit!==undefined)db.meta.todoDivShowEdit=L.divEdit;if(L.divDel!==undefined)db.meta.todoDivShowDel=L.divDel;if(L.icons!==undefined)db.meta.todoHomeIcons=L.icons;}
   save();
   const src=d.source||'ukjent kilde';const when=todoSyncWhen(d.exportedAt);
@@ -1871,7 +1949,7 @@ function sheetOpen(title,bodyHtml,footHtml,fullH){
   document.body.style.overflow='hidden';
   {const _si=document.querySelector('#sheet .sheet-in');const _sg=document.getElementById('shGrab');if(_si){_si.classList.toggle('fullh',!!fullH);_si.style.height=fullH?'':(db.meta.sheetH?db.meta.sheetH+'px':'');}if(_sg&&_si){_sg.onpointerdown=e=>{if(e.button!=null&&e.button>0)return;e.preventDefault();const sy=e.clientY,sh0=_si.offsetHeight;const mv=ev=>{let h=sh0+(sy-ev.clientY);h=Math.max(260,Math.min(window.innerHeight*0.94,h));_si.style.height=h+'px';};const up=()=>{document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);db.meta.sheetH=_si.offsetHeight;save();};document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);};}}
 }
-function sheetClose(){if(typeof closeChkPop==='function')closeChkPop();document.getElementById('sheet').classList.remove('on');document.body.style.overflow='';if(tilePopReturn){const k=tilePopReturn;tilePopReturn=null;openTilePop(k);}}
+function sheetClose(){if(typeof closeChkPop==='function')closeChkPop();document.getElementById('sheet').classList.remove('on');document.body.style.overflow='';if(tilePopReturn){const k=tilePopReturn;tilePopReturn=null;openTilePop(k);}if(_todoRetAv){const k2=_todoRetAv;_todoRetAv=null;setTimeout(()=>{if(document.getElementById('sheet').classList.contains('on'))return;if(!mcal().some(x=>x.id===k2))return;mcalSheet(k2);const tb2=document.querySelector('#shBody [data-mcavtab="knyt"]');if(tb2)tb2.click();},60);}}
 document.getElementById('shClose').innerHTML=svg('x');
 document.getElementById('shClose').onclick=sheetClose;
 (function(){const sh=document.getElementById('sheet');let _shDown=false;sh.addEventListener('mousedown',e=>{_shDown=(e.target.id==='sheet');});sh.addEventListener('click',e=>{if(e.target.id==='sheet'&&_shDown)sheetClose();});})();
@@ -2020,22 +2098,26 @@ function todoSheet(id,preset){
   const noteSum=()=>{const txt=noteText(t.note||'');return txt?esc(txt.slice(0,26))+(txt.length>26?'…':''):'—';};
   const noteInit=/[<][a-z\/]/i.test(t.note||'')?(t.note||''):esc(t.note||'').replace(/\n/g,'<br>');
   let _tdNoteHtml=noteInit;
+  let _tdd2Prio=t.todoPrio||'';
   const secOpenSet=new Set();
   const _DOT='<span class="td-sec-dot"></span>';const secMark=(key)=>{if(key==='notat')return noteText(t.note||'')?_DOT:'';if(key==='sjekk')return (t.checklist||[]).length?_DOT:'';if(key==='naar')return tags.length?_DOT:'';if(key==='dato')return t.date?_DOT:'';if(key==='lenker')return links.length?_DOT:'';if(key==='bilde')return imgsTmp.length?`<img class="td-sec-thumb" src="${imgsTmp[0].src}" alt="">`:'';return '';};const sec=(key,icon,label,sumHtml,bodyHtml)=>{const open=secOpenSet.has(key);return `<div class="td-sec${open?' open':''}"><button type="button" class="td-sec-hd" data-tdsec="${key}"><span class="td-sec-ic">${svg(icon)}</span><span class="td-sec-lbl">${label}</span>${secMark(key)}<span class="td-sec-sum" id="tdsum_${key}">${sumHtml}</span><span class="td-sec-chev">${svg('chev')}</span></button><div class="td-sec-body">${bodyHtml}</div></div>`;};
   const prioBtnsHtml=()=>`<button type="button" class="td-pc${prio===''?' on':''}" data-abc=""><span class="pcnone">⊘</span><span>Ingen prioritet</span></button>`+abcCatsAlpha().map(([k,l,c])=>`<button type="button" class="td-pc${prio===k?' on':''}" style="${prio===k?`border-color:${c};background:${c}18`:''}" data-abc="${k}"><span class="bb" style="background:${c}">${esc(k)}</span><span>${esc(l)}</span></button>`).join('')+`<button type="button" class="td-pc td-pc-add" data-abcadd>+ Legg til valg</button>`;
   const katBtnsHtml=()=>_ordCats.map(([k,l,c])=>`<button type="button" class="td-pc${abc===k?' on':''}" style="${abc===k?`border-color:${c};background:${c}18`:''}" data-katset="${k}"><span class="bb" style="background:${c}">${esc(k)}</span><span>${esc(l)}</span></button>`).join('');
   const _TDOT='<span class="td-tabdot"></span>';
-  const tabDot=key=>{if(key==='todo')return noteText(t.note||'')?_TDOT:'';if(key==='sjekk')return (t.checklist||[]).length?_TDOT:'';if(key==='naar')return tags.length?_TDOT:'';if(key==='dato')return t.date?_TDOT:'';if(key==='lenker')return links.length?_TDOT:'';if(key==='knyt')return (t.linkedTask||t.linkedContact)?_TDOT:'';if(key==='bilde')return imgsTmp.length?_TDOT:'';return '';};
+  const tabDot=key=>{if(key==='todo')return noteText(t.note||'')?_TDOT:'';if(key==='sjekk')return (t.checklist||[]).length?_TDOT:'';if(key==='naar')return tags.length?_TDOT:'';if(key==='dato')return t.date?_TDOT:'';if(key==='lenker')return links.length?_TDOT:'';if(key==='knyt')return (t.linkedTask||t.linkedContact)?_TDOT:'';if(key==='bilde')return imgsTmp.length?_TDOT:'';if(key==='tdagens')return (t.todoDate||t.todoPrio)?_TDOT:'';return '';};
   const etab=(k,ic,l)=>`<button type="button" class="td-etab${k==='todo'?' on':''}" data-tdtab="${k}">${ic}<span>${l}</span>${tabDot(k)}</button>`;
   const _abcIc=`<span class="abc3"><b style="background:var(--red)">A</b><b style="background:var(--amber)">B</b><b style="background:var(--green)">C</b></span>`;
-  const tabBar=`<div class="td-etabs">${etab('todo',svg('edit'),'ToDo')}${etab('sjekk',svg('checklist'),'Sjekkliste')}${etab('naar',svg('clock'),'Når')}${etab('kat',svg('tag'),'Kategori')}${etab('dato',svg('cal'),'Dato')}${etab('prio',_abcIc,'Prioritet')}${etab('knyt',svg('link'),'Knytning')}${etab('lenker',svg('link'),'Lenker')}${etab('bilde',svg('photo'),'Bilde')}</div>`;
+  const tabBar=`<div class="td-etabs">${etab('todo',svg('edit'),'ToDo')}${etab('sjekk',svg('checklist'),'Sjekkliste')}${etab('tdagens',svg('sun'),'Dagens ToDo')}${etab('naar',svg('clock'),'Når')}${etab('prio',_abcIc,'ABC Prioritet')}${etab('kat',svg('tag'),'Kategori')}${etab('dato',svg('cal'),'Dato')}${etab('knyt',svg('link'),'Knytting')}${etab('lenker',svg('link'),'Lenker')}${etab('bilde',svg('photo'),'Bilder')}</div>`;
   const pane=(k,body)=>`<div class="td-pane${k==='todo'?' on':''}" data-tdpane="${k}">${body}</div>`;
   sheetOpen(id?'Rediger ToDo':'Ny ToDo',`
     ${tabBar}
     <div class="td-panes">
-      ${pane('todo',`<div class="td-sect"><div class="td-titlerow"><div class="tcol"><div class="td-sect-h">${svg('edit')}<span>Hva skal gjøres</span></div><div class="f" style="margin:0"><input id="tdTitle" value="${esc(t.title||'')}" placeholder="Skriv oppgaven…"></div></div><button type="button" class="td-favbtn td-favinline${fav?' on':''}" data-tdfavtog>${svg('flag')}<span>Prioritert · <b class="td-sec-favstate">${fav?'På':'Av'}</b></span></button></div></div>
+      ${pane('todo',`<div class="td-sect"><div style="margin-bottom:8px"><button type="button" class="td-favbtn td-favinline${fav?' on':''}" data-tdfavtog>${svg('flag')}<span>Prioritert · <b class="td-sec-favstate">${fav?'På':'Av'}</b></span></button></div><div class="td-sect-h">${svg('edit')}<span>Hva skal gjøres</span></div><div class="f" style="margin:0"><input id="tdTitle" value="${esc(t.title||'')}" placeholder="Skriv oppgaven…"></div></div>
         <div class="td-sect"><div class="td-sect-h">${svg('note')}<span>Notat</span><span class="td-sect-r"><button type="button" class="ib2" data-tdnotepop title="Åpne i stort felt">${svg('eye')}</button><button type="button" class="ib2" data-tdnoteprint title="Skriv ut">${svg('printer')}</button></span></div>
         <div id="tdNotePr" class="mc-notepr${noteText(noteInit)?'':' tom'}" data-tdnotepop>${noteInit}</div></div>`)}
+      ${pane('tdagens',`<div class="mc-dcard"><div class="mc-dcard-h">${svg('flag')}<span>Prioritet</span></div><div class="mc-dcard-b"><div class="mc-prow">${[['A','Må','#c0413b'],['B','Bør','#d98324'],['C','Kan vente','#2f8f5b']].map(pr=>`<button type="button" class="mc-pb${(_tdd2Prio||'')===pr[0]?' on':''}" data-tdprio2="${pr[0]}"><span class="b" style="background:${pr[2]}">${pr[0]}</span>${pr[1]}</button>`).join('')}</div></div></div>
+        <div class="mc-dcard"><div class="mc-dcard-h">${svg('sun')}<span>Vis under Dagens oppgaver</span></div><div class="mc-dcard-b"><input id="tdTdd" type="date" value="${esc(t.todoDate||'')}" style="width:100%"><div id="tdTddWd" style="font-size:12.5px;font-weight:700;color:var(--petrol);margin-top:7px">${t.todoDate?esc(mcDayLbl(t.todoDate)):''}</div></div></div>
+        <div class="mc-dcard"><div class="mc-dcard-h">${svg('clock')}<span>Hurtigvalg</span></div><div class="mc-dcard-b"><div style="display:flex;gap:5px;flex-wrap:wrap">${[['0','I dag'],['1','I morgen'],['3','+3 dager'],['man','Neste man.'],['7','+1 uke'],['clear','✕ Fjern']].map(pr=>`<button type="button" class="mc-qb2${pr[0]==='clear'?' del':''}" data-tdq2="${pr[0]}" style="flex:0 0 auto;padding:7px 11px">${pr[1]}</button>`).join('')}</div></div></div>`)}
       ${pane('sjekk',`<div class="td-sect"><div class="td-sect-h">${svg('checklist')}<span>Sjekkliste</span><span class="td-sect-cnt" id="tdChkCnt"></span><span class="td-sect-r"><button type="button" class="ib2" data-chkpop title="Åpne i eget vindu">${svg('eye')}</button><button type="button" class="ib2" data-chkprint title="Skriv ut sjekklisten">${svg('printer')}</button></span></div><div id="tdChecks">${(t.checklist||[]).map(c=>c.div?checkDivRow(c):checkRow(c)).join('')}</div><div class="td-addrow"><span class="td-addplus">${svg('plus')}</span><input id="tdChkNew" placeholder="Nytt punkt … (Enter for neste)" enterkeyhint="next" autocapitalize="sentences"></div></div><div class="td-chkbtns" style="margin-top:5px"><button type="button" class="btn sm ghost" id="tdChkAddDiv">${svg('plus')}<span>Legg til skillelinje</span></button></div>`)}
       ${pane('dato',`<div class="td-sect"><div class="td-sect-h">${svg('cal')}<span>Velg dato</span></div><input id="tdDate" type="date" value="${esc(t.date||'')}" style="width:100%"></div>
         <div class="td-sect"><div class="td-sect-h">${svg('clock')}<span>Hurtigvalg</span></div>
@@ -2066,6 +2148,14 @@ function todoSheet(id,preset){
     const ncl=e.target.closest('[data-tdnotecol]');
     if(ncl){e.preventDefault();const ne=document.getElementById('tdNote');if(ne){ne.focus();try{document.execCommand('styleWithCSS',false,true);}catch(_e){}document.execCommand('foreColor',false,ncl.dataset.tdnotecol);}return;}
     if(e.target.closest('[data-tdnoteprint]')){notePrint();return;}
+    const tp2=e.target.closest('[data-tdprio2]');
+    if(tp2){_tdd2Prio=_tdd2Prio===tp2.dataset.tdprio2?'':tp2.dataset.tdprio2;body.querySelectorAll('[data-tdprio2]').forEach(x=>x.classList.toggle('on',x.dataset.tdprio2===_tdd2Prio));return;}
+    const q2b=e.target.closest('[data-tdq2]');
+    if(q2b){const di2=document.getElementById('tdTdd');if(!di2)return;const v2=q2b.dataset.tdq2;
+      if(v2==='clear'){di2.value='';}
+      else if(v2==='man'){const d=new Date();const day=(d.getDay()+6)%7;d.setDate(d.getDate()+(7-day));di2.value=ymd(d);}
+      else{const d=new Date();d.setDate(d.getDate()+Number(v2));di2.value=ymd(d);}
+      const w2=document.getElementById('tdTddWd');if(w2)w2.textContent=di2.value?mcDayLbl(di2.value):'';return;}
     const qd=e.target.closest('[data-tdqd]');
     if(qd){const di=document.getElementById('tdDate');if(di){const v=qd.dataset.tdqd;
       if(v==='clear'){di.value='';}
@@ -2136,7 +2226,7 @@ function todoSheet(id,preset){
   document.getElementById('tdSave').onclick=()=>{
     const title=document.getElementById('tdTitle').value.trim();
     if(!title){toast('Skriv hva som skal gjøres.');return;}
-    const _la=document.getElementById('tdLinkAdd');if(_la&&_la.value.trim()){let u=_la.value.trim();if(!/^https?:\/\//i.test(u))u='https://'+u;links.push(u);}const obj={title,tags,abc,prio,fav,date:document.getElementById('tdDate').value,cal:todoCalTmp,note:_tdNoteHtml,link:(links[0]||''),links:links.slice(),checklist:readChecks(),image:(imgsTmp[0]?imgsTmp[0].src:''),images:imgsTmp.map(x=>({src:x.src,added:x.added||0})),linkedTask:t.linkedTask||null,linkedContact:t.linkedContact||null,updated:Date.now()};
+    const _la=document.getElementById('tdLinkAdd');if(_la&&_la.value.trim()){let u=_la.value.trim();if(!/^https?:\/\//i.test(u))u='https://'+u;links.push(u);}const obj={title,tags,abc,prio,fav,todoDate:(document.getElementById('tdTdd')||{}).value||'',todoPrio:_tdd2Prio,date:document.getElementById('tdDate').value,cal:todoCalTmp,note:_tdNoteHtml,link:(links[0]||''),links:links.slice(),checklist:readChecks(),image:(imgsTmp[0]?imgsTmp[0].src:''),images:imgsTmp.map(x=>({src:x.src,added:x.added||0})),linkedTask:t.linkedTask||null,linkedContact:t.linkedContact||null,updated:Date.now()};
     if(id){Object.assign(db.todos.find(x=>x.id===id),obj);}
     else{obj.id=uid();obj.done=false;obj.created=Date.now();db.todos.push(obj);}
     save();sheetClose();toast(id?'Oppdatert':'Lagt til');render();
@@ -2640,7 +2730,7 @@ function renderTimerTab(){
     <div class="tm-sumrow"><div class="tm-sumc"><b>${fmt(dayH)}</b><span>I dag</span></div><div class="tm-sumc"><b>${fmt(weekH)}</b><span>Denne uken</span></div><div class="tm-sumc"><b>${fmt(monthH)}</b><span>Denne mnd.</span></div></div>
   </div>
   <div class="td-sect tm-sect"><div class="td-sect-h tm-loghd" data-tmlog>${svg('cal')}<span>Siste føringer</span><span class="td-sect-cnt">${db.time.length}</span><span class="tools-chev${tmLogOpen?'':' cl'}">${svg('chev')}</span></div>
-    ${tmLogOpen?`${rows.length?rows.map(e=>`<div class="tm-row"><span class="tm-h">${fmt(Number(e.hours)||0)} t</span><span class="tm-t">${esc(e.desc||e.prosjekt||'—')}</span><span class="tm-d">${dlbl(e.date||'')}</span><button type="button" class="ib tm-del" data-tmdel="${esc(e.id)}">${svg('trash')}</button></div>`).join(''):'<div class="td-sectempty">Ingen føringer enda.</div>'}
+    ${tmLogOpen?`${rows.length?rows.map(e=>`<div class="tm-row" data-tmedit="${esc(e.id)}" style="cursor:pointer"><span class="tm-h">${fmt(Number(e.hours)||0)} t</span><span class="tm-t">${esc(e.desc||e.prosjekt||'—')}</span><span class="tm-d">${dlbl(e.date||'')}</span><button type="button" class="ib tm-del" data-tmdel="${esc(e.id)}">${svg('trash')}</button></div>`).join(''):'<div class="td-sectempty">Ingen føringer enda.</div>'}
     <div class="td-secthint">Timene blir med i synkfilen og legges rett i Timeføring i TettPå 2.0.</div>`:''}
   </div>
   <div class="build">TettPå iPhone · versjon ${BUILD_NO} · ${BUILD_DATE}</div></div>`;
@@ -2659,6 +2749,7 @@ function renderTimerTab(){
   const tst=v.querySelector('[data-ttstart]');if(tst)tst.onclick=()=>{db.meta.tmRunStart=Date.now();save();render();};
   const tsp=v.querySelector('[data-ttstop]');if(tsp)tsp.onclick=()=>tmStopPop();
   if(running)ensureTtTimer();
+  v.querySelectorAll('[data-tmedit]').forEach(r2=>r2.onclick=ev=>{if(ev.target.closest('[data-tmdel]'))return;tmEditPop(r2.dataset.tmedit);});
   v.querySelectorAll('[data-tmdel]').forEach(b=>b.onclick=()=>{
     const id=b.dataset.tmdel;
     if(!Array.isArray(db.timeDeleted))db.timeDeleted=[];
@@ -2666,6 +2757,59 @@ function renderTimerTab(){
     db.time=db.time.filter(x=>x.id!==id);
     save();toast('Føring slettet');render();
   });
+}
+function tmEditPop(id){
+  const e0=(db.time||[]).find(x=>x.id===id);if(!e0)return;
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>Rediger føring</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div class="f" style="margin-bottom:9px"><label>Hva gjaldt det</label><input id="tmEdDesc" value="${esc(e0.desc||'')}" placeholder="Beskrivelse…"></div>
+    <div class="f" style="margin-bottom:9px"><label>Dato</label><input id="tmEdDate" type="date" value="${esc(e0.date||'')}"></div>
+    <div class="f" style="margin-bottom:9px"><label>Antall timer</label><input id="tmEdHours" type="text" inputmode="decimal" value="${esc(String(e0.hours!=null?e0.hours:'')).replace('.',',')}"></div>
+    <div class="mctxt-btns"><button type="button" class="btn ghost" data-tmeddel style="color:var(--red);border-color:var(--red)">${svg('trash')}<span>Slett</span></button><button type="button" class="btn ghost" data-c>Avbryt</button><button type="button" class="btn pri" data-tok>${svg('check')}<span>Lagre</span></button></div>
+  </div>`;
+  document.body.appendChild(ov);
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}
+    if(e.target.closest('[data-tmeddel]')){
+      if(!Array.isArray(db.timeDeleted))db.timeDeleted=[];
+      db.timeDeleted.push({id,deletedAt:Date.now()});
+      db.time=db.time.filter(x=>x.id!==id);
+      save();ov.remove();toast('Føring slettet');render();return;}
+    if(e.target.closest('[data-tok]')){
+      const h=parseFloat(String(document.getElementById('tmEdHours').value).replace(',','.'));
+      if(!h||h<=0){toast('Skriv antall timer.');return;}
+      e0.desc=document.getElementById('tmEdDesc').value.trim();
+      e0.date=document.getElementById('tmEdDate').value||e0.date;
+      e0.hours=h;e0.updated=Date.now();
+      save();ov.remove();toast('Føring oppdatert');render();return;}
+  });
+}
+function todoPeek(id){
+  const t=(db.todos||[]).find(x=>x.id===id);
+  if(!t){toast('Fant ikke ToDo-en – synk den over først.');return;}
+  const PC={A:'#c0413b',B:'#d98324',C:'#2f8f5b'};
+  let katL='';try{const km=t.abc?catMeta(t.abc):null;if(km)katL=km[1]||'';}catch(_e){}
+  const cl=(t.checklist||[]).filter(c=>!c.div);
+  const dn=cl.filter(c=>c.done).length;
+  const meta=[];
+  if(t.date)meta.push('Frist: '+t.date.slice(8,10)+'.'+t.date.slice(5,7)+'.'+t.date.slice(0,4));
+  if(katL)meta.push('Kategori: '+katL);
+  if(t.todoDate)meta.push('Dagens: '+t.todoDate.slice(8,10)+'.'+t.todoDate.slice(5,7)+'.');
+  const nt=noteText(t.note||'');
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>Knyttet ToDo</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div style="font-size:13.5px">
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:7px">${(t.prio==='A'||t.prio==='B'||t.prio==='C')?`<span style="width:20px;height:20px;border-radius:5px;background:${PC[t.prio]};color:#fff;font-size:11.5px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto">${t.prio}</span>`:''}<b>${esc(t.title||'')}</b>${t.done?'<span style="color:#2f8f5b;font-weight:800;font-size:11px">✓</span>':''}</div>
+      ${meta.length?`<div style="font-size:12px;color:var(--muted);margin-bottom:7px">${esc(meta.join(' · '))}</div>`:''}
+      ${nt?`<div style="background:#f6f8f7;border:1.5px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:7px;font-size:12.5px">${t.note}</div>`:''}
+      ${cl.length?`<div style="font-size:12px;font-weight:700">Sjekkliste: ${dn} av ${cl.length} gjort</div>`:''}
+      <div class="mctxt-btns"><button type="button" class="btn pri" data-c>${svg('check')}<span>Lukk</span></button></div>
+    </div>
+  </div>`;
+  document.body.appendChild(ov);
+  ov.addEventListener('click',e=>{if(e.target===ov||e.target.closest('[data-c]'))ov.remove();});
 }
 function renderTabbar(){
   const t=[['hjem','Hjem','home'],['liste','Liste','checklist'],['minical','Kalender','cal'],['timer','Timer','clock'],['abc','A-B-C','tag'],['synk','Synk','refresh']];
@@ -3308,11 +3452,13 @@ function purgeDone(){
 }
 function wipeAll(){
   const n=(db.todos||[]).length, tn=(db.time||[]).length;
-  if(!n&&!tn){toast('Ingen data \u00e5 slette.');return;}
+  const kn=(Array.isArray(db.minical)?db.minical:[]).length;
+  const pn=(db.pakkeLists||[]).length;
+  if(!n&&!tn&&!kn&&!pn&&!(db.divkart||[]).length){toast('Ingen data \u00e5 slette.');return;}
   const ov=document.createElement('div');ov.className='dgp-ov';ov.id='wipePop';
   ov.innerHTML=`<div class="dgp">
     <div class="dgp-h sy-dzh">${svg('warn')}<span>Slett alle data</span><button class="dgp-x" data-wpc>${svg('x')}</button></div>
-    <div class="wp-hl">Sletter <b>${n} ToDo-er</b> og <b>${tn} timef\u00f8ringer</b> (\u00abSiste f\u00f8ringer\u00bb under Timer). Innholdet er borte for godt uansett hva du velger under. Ta gjerne en eksport f\u00f8rst.</div>
+    <div class="wp-hl">Sletter <b>${n} ToDo-er</b>, <b>${tn} timef\u00f8ringer</b>, <b>${kn} avtaler og skillelinjer i kalenderen</b> (Mini kalenderen, Dagens oppgaver og Kj\u00f8p) og <b>${pn} pakkelister</b>. <b>A-B-C-valg, kategorier og skillelinje-kartotek t\u00f8mmes ogs\u00e5</b> (tilbake til standard). Innholdet er borte for godt uansett hva du velger under. Ta gjerne en eksport f\u00f8rst.</div>
     <button class="wp-opt g" data-wp="tomb"><span class="wp-t">\ud83e\udea6 Slett + husk slettingen (anbefalt)</span><span class="wp-d">Sm\u00e5 slettemerker (kun id + tidspunkt) blir igjen i 90 dager, s\u00e5 slettingen f\u00f8lger med til TettP\u00e5 2.0 ved neste synk. Ingenting kommer tilbake.</span></button>
     <button class="wp-opt r" data-wp="ren"><span class="wp-t">\ud83e\uddf9 Slett helt rent \u2013 uten spor</span><span class="wp-d">Appen t\u00f8mmes fullstendig \u2013 ogs\u00e5 gamle slettemerker. OBS: leses en synkfil inn senere, kommer alt i den fila tilbake.</span></button>
     <button class="wp-avbryt" data-wpc>Avbryt</button>
@@ -3322,7 +3468,7 @@ function wipeAll(){
     if(e.target===ov||e.target.closest('[data-wpc]')){ov.remove();return;}
     const b=e.target.closest('[data-wp]');if(!b)return;
     const mode=b.dataset.wp;
-    if(!confirm('Helt sikker? Sletter '+n+' ToDo-er og '+tn+' timef\u00f8ringer. Kan ikke angres.'))return;
+    if(!confirm('Helt sikker? Sletter '+n+' ToDo-er, '+tn+' timef\u00f8ringer, '+kn+' kalenderlinjer og '+pn+' pakkelister \u2013 pluss A-B-C-valg, kategorier og skillelinje-kartotek. Kan ikke angres.'))return;
     if(mode==='tomb'){
       const now=Date.now();
       if(!Array.isArray(db.todoDeleted))db.todoDeleted=[];
@@ -3332,7 +3478,7 @@ function wipeAll(){
     }else{
       db.todoDeleted=[];db.timeDeleted=[];
     }
-    db.todos=[];db.time=[];
+    db.todos=[];db.time=[];db.minical=[];db.pakkeLists=[];db.pakkeItems=[];delete db.meta.pakkeSel;db.todoCats=[];db.abcCats=[];db.divkart=[];db.todoDividers=[];
     save();ov.remove();
     toast(mode==='tomb'?'Alt slettet \u2013 slettingen huskes til neste synk':'Alt slettet \u2013 helt rent, uten spor');
     renderSync();
@@ -3988,7 +4134,7 @@ function renderSyncTab(){
     <div class="td-sect tm-sect"><div class="td-sect-h sy-dzh">${svg('warn')}<span>Faresone</span></div>
       <div class="syncbtns">
         <button class="sbtn sy-warn" data-purge="1">${svg('check')}<div><span class="tt">Fjern fullførte oppgaver</span><small>Rydder bort alt som er huket av</small></div></button>
-        <button class="sbtn sy-del" data-wipe="1">${svg('trash')}<div><span class="tt">Slett alle data</span><small>ToDo-er og alle timeføringer</small></div></button>
+        <button class="sbtn sy-del" data-wipe="1">${svg('trash')}<div><span class="tt">Slett alle data</span><small>Alt: ToDo-er, timer, kalender, pakkelister, A-B-C, kategorier og kartotek</small></div></button>
       </div>
       <div class="sy-dnote">Kan ikke angres – ta gjerne en eksport først.</div>
     </div>
@@ -4005,7 +4151,7 @@ function renderSyncTab(){
 function mcal(){if(!Array.isArray(db.minical))db.minical=[];return db.minical;}
 function mcParse(d){const x=String(d||'').split('-');return new Date(Number(x[0]),Number(x[1])-1,Number(x[2]));}
 function mcAdd(d,n){const x=mcParse(d);x.setDate(x.getDate()+n);return ymd(x);}
-function getMcalMode(){const m=(db.meta&&db.meta.mcalMode);return m==='uke'?'uke':m==='2dag'?'2dag':'dag';}
+function getMcalMode(){const m=(db.meta&&db.meta.mcalMode);return m==='uke'?'uke':m==='2dag'?'2dag':m==='dagens'?'dagens':m==='kjop'?'kjop':m==='pakke'?'pakke':'dag';}
 let mcalAnchor=null;
 function mcNoteText(h){const d=document.createElement('div');d.innerHTML=h||'';return (d.textContent||'').trim();}
 const mcOrd=(a,b)=>((a.ord!=null?a.ord:1e9)-(b.ord!=null?b.ord:1e9))||((a.created||0)-(b.created||0));
@@ -4015,14 +4161,14 @@ function mcDayLbl(d){try{const t=new Intl.DateTimeFormat('nb-NO',{weekday:'long'
 function mcIsoWeek(d){const dt=mcParse(d);const u=new Date(Date.UTC(dt.getFullYear(),dt.getMonth(),dt.getDate()));const day=(u.getUTCDay()+6)%7;u.setUTCDate(u.getUTCDate()-day+3);const f=new Date(Date.UTC(u.getUTCFullYear(),0,4));return 1+Math.round(((u-f)/86400000-3+((f.getUTCDay()+6)%7))/7);}
 function mcalRowHtml(a){
   if(a.div)return `<div class="mc-div" data-mcid="${a.id}" data-mcdate="${a.date||''}"><span class="mc-grip" data-mcgrip>${svg('grip')}</span><span class="mc-div-t">${esc(a.label||'')}</span><span class="mc-div-l"></span>${db.meta.mcalRowBtns===false?'':`<button type="button" class="ib" data-mcdivedit="${a.id}">${svg('edit')}</button><button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button>`}</div>`;
+  const mny=(a.todoLinks&&a.todoLinks.length>1)?' mini':'';
   return `<div class="mc-row${a.done?' done':''}${a.dim?' rdim':''}" data-mcid="${a.id}" data-mcdate="${a.date||''}">
     <span class="mc-grip" data-mcgrip>${svg('grip')}</span>
     <button type="button" class="mc-chk${a.done?' on':''}" data-mcdone="${a.id}">${a.done?svg('check'):''}</button>
-    <b data-mcedit="${a.id}">${esc(a.title||'')}</b>
-    ${a.todoId?`<span class="mc-todochip" data-mctodo="${a.todoId}">${svg('mobile')}<span>${esc(a.todoTitle||'ToDo')}</span></span>`:''}
+    ${a.klokke?`<span class="mc-klk${mny}">${esc(a.klokke)}</span>`:''}<b data-mcedit="${a.id}">${esc(a.title||'')}</b>
     ${a.note?`<span class="mc-nt">${svg('note')}</span>`:''}
     ${a.cal?`<span class="mc-tp">2.0-kal.</span>`:''}
-    ${db.meta.mcalRowBtns===false?'':`<button type="button" class="mc-dimb${a.dim?' on':''}" data-mcdim="${a.id}" title="Grå ut linja"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button><button type="button" class="ib" data-mccopy="${a.id}" title="Kopier">${svg('copy')}</button><button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button>`}
+    <span class="mc-acts">${db.meta.mcalTomBtn?`<button type="button" class="mc-tomb mc-sm" data-mctom="${a.id}">I morgen›</button><button type="button" class="mc-dgb mc-sm${a.todoDate?' on':''}" data-mcdg="${a.id}">${a.todoDate?'✓Dag':'＋Dag'}</button><button type="button" class="mc-tomb mc-sm" data-mccopy="${a.id}">⧉</button>`:''}${a.todoId?`<button type="button" class="mc-knytb${mny}" data-mctodo="${a.todoId}">${svg('link')}${(a.todoLinks&&a.todoLinks.length>1)?`<b>${a.todoLinks.length}</b>`:''}</button>`:''}${a.todoDate?`<span class="mc-dglapp${mny}">☀</span>`:''}${db.meta.mcalRowBtns===false?'':`<button type="button" class="mc-dimb${a.dim?' on':''}" data-mcdim="${a.id}" title="Grå ut linja"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button><button type="button" class="ib" data-mccopy="${a.id}" title="Kopier">${svg('copy')}</button><button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button>`}</span>
   </div>`;
 }
 function mcalWireDrag(container){
@@ -4052,13 +4198,20 @@ function mcalWireDrag(container){
   });
 }
 function mcalRowsHtml(items){
-  let out='';let open=false;
-  items.forEach(a=>{
+  let out='';let open=false;let skip=false;
+  items.forEach((a,idx)=>{
     if(a.div){
-      if(open)out+='</div></div>';
-      out+=`<div class="mc-mgrp"><div class="mc-mtab" data-mcid="${a.id}" data-mcdate="${a.date||''}"><span class="mc-grip" data-mcgrip>${svg('grip')}</span><span>${esc(a.label||'')}</span>${db.meta.mcalRowBtns===false?'':`<span class="mc-mtx"><button type="button" class="ib" data-mcdivedit="${a.id}">${svg('edit')}</button><button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button></span>`}</div><div class="mc-mbox">`;
-      open=true;
-    }else out+=mcalRowHtml(a);
+      if(open){out+='</div></div>';open=false;}
+      skip=false;
+      if(a.plain){out+=`<div class="mc-strek" data-mcid="${a.id}" data-mcdate="${a.date||''}"><span class="mc-grip" data-mcgrip>${svg('grip')}</span><span class="l"></span>${db.meta.mcalRowBtns===false?'':`<button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button>`}</div>`;}
+      else{
+        const closed=!!a.lukket;
+        let cnt=0;for(let j=idx+1;j<items.length;j++){if(items[j].div)break;cnt++;}
+        const tab=`<div class="mc-mtab" data-mcid="${a.id}" data-mcdate="${a.date||''}"><span class="mc-grip" data-mcgrip>${svg('grip')}</span><button type="button" class="mc-fold" data-mcdivfold="${a.id}">${closed?'▸':'▾'}</button><span>${esc(a.label||'')}</span>${closed?`<span class="mc-fcnt">${cnt}</span>`:''}${db.meta.mcalDivTomBtn?`<span class="mc-mtx"><button type="button" class="mc-tomb" data-mcdivtom="${a.id}">I morgen ›</button></span>`:''}${db.meta.mcalRowBtns===false?'':`<span class="mc-mtx"><button type="button" class="ib" data-mcdivedit="${a.id}">${svg('edit')}</button><button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button></span>`}</div>`;
+        if(closed){out+=`<div class="mc-mgrp">${tab}</div>`;skip=true;}
+        else{out+=`<div class="mc-mgrp">${tab}<div class="mc-mbox">`;open=true;}
+      }
+    }else if(!skip)out+=mcalRowHtml(a);
   });
   if(open)out+='</div></div>';
   return out;
@@ -4096,6 +4249,519 @@ function mcalWireDrag2(wrap){
     });
   });
 }
+let dagAnchor='';
+function getDagMode(){const m=db.meta.dagMode;return m==='uke'?'uke':m==='2dag'?'2dag':'dag';}
+function dgPrioRank(a){return a.todoPrio==='A'?0:a.todoPrio==='B'?1:a.todoPrio==='C'?2:3;}
+const dgOrd=(a,b)=>((a.dord==null?1e9:a.dord)-(b.dord==null?1e9:b.dord))||(dgPrioRank(a)-dgPrioRank(b))||((a.created||0)-(b.created||0));
+function dagItems(d){const av=mcal().filter(a=>a.div?(!!a.dg&&(a.ddate||'')===d):(!!(a.todoDate)&&(a.todoDate||'')===d));const td=(db.todos||[]).filter(t=>(t.todoDate||'')===d);return av.concat(td).sort(dgOrd);}
+function dgFind(id){return mcal().find(x=>x.id===id)||(db.todos||[]).find(x=>x.id===id);}
+function dgNormalize(d){dagItems(d).forEach((x,i)=>{x.dord=i;});}
+const dgOrd2=(a,b)=>(dgPrioRank(a)-dgPrioRank(b))||((a.dord==null?1e9:a.dord)-(b.dord==null?1e9:b.dord))||((a.created||0)-(b.created||0));
+function dagItemsView(d){
+  const list=dagItems(d);
+  if(!db.meta.dagSortPrio)return list;
+  const out=[];let buf=[];
+  const flush=()=>{buf.sort(dgOrd2);out.push(...buf);buf=[];};
+  list.forEach(it=>{if(it.div){flush();out.push(it);}else buf.push(it);});
+  flush();
+  return out;
+}
+const DG_PCOL={A:'#c0413b',B:'#d98324',C:'#2f8f5b'};
+function dagRowHtml(a){
+  const isT=!a.div&&(db.todos||[]).some(t2=>t2.id===a.id);
+  const mny=(a.todoLinks&&a.todoLinks.length>1)?' mini':'';
+  return `<div class="mc-row${a.done?' done':''}${a.dim?' rdim':''}" data-mcid="${a.id}">
+    <span class="mc-grip" data-mcgrip>${svg('grip')}</span>
+    <button type="button" class="mc-chk${a.done?' on':''}" data-mcdone="${a.id}">${a.done?svg('check'):''}</button>
+    <button type="button" class="mc-pri${a.todoPrio?'':' none'}" data-mcpricyc="${a.id}"${a.todoPrio?` style="background:${DG_PCOL[a.todoPrio]||'#8a938f'}"`:''}>${a.todoPrio?esc(a.todoPrio):'＋'}</button>
+    ${a.klokke?`<span class="mc-klk${mny}">${esc(a.klokke)}</span>`:''}<b data-mcedit="${a.id}">${esc(a.title||'')}</b>${isT?`<span class="mc-tp">ToDo</span>`:''}
+    ${a.note?`<span class="mc-nt">${svg('note')}</span>`:''}
+    <span class="mc-acts">${(!isT&&a.todoId)?`<button type="button" class="mc-knytb${mny}" data-mctodo="${a.todoId}">${svg('link')}${(a.todoLinks&&a.todoLinks.length>1)?`<b>${a.todoLinks.length}</b>`:''}</button>`:''}${db.meta.mcalRowBtns===false?'':`<button type="button" class="mc-dimb${a.dim?' on':''}" data-mcdim="${a.id}" title="Grå ut linja"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>${isT?'':`<button type="button" class="ib" data-mccopy="${a.id}" title="Kopier">${svg('copy')}</button>`}${isT?`<button type="button" class="ib" data-dgtdrm="${a.id}" style="color:var(--red)" title="Fjern fra Dagens oppgaver">${svg('trash')}</button>`:`<button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button>`}`}</span>
+  </div>`;
+}
+function dagRowsHtml(items){
+  let out='';let open=false;
+  items.forEach(a=>{
+    if(a.div){
+      if(open){out+='</div></div>';open=false;}
+      if(a.plain){out+=`<div class="mc-strek" data-mcid="${a.id}"><span class="mc-grip" data-mcgrip>${svg('grip')}</span><span class="l"></span>${db.meta.mcalRowBtns===false?'':`<button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button>`}</div>`;}
+      else{out+=`<div class="mc-mgrp"><div class="mc-mtab" data-mcid="${a.id}"><span class="mc-grip" data-mcgrip>${svg('grip')}</span><span>${esc(a.label||'')}</span>${db.meta.mcalRowBtns===false?'':`<span class="mc-mtx"><button type="button" class="ib" data-dgdivedit="${a.id}">${svg('edit')}</button><button type="button" class="ib" data-mcdel="${a.id}" style="color:var(--red)">${svg('trash')}</button></span>`}</div><div class="mc-mbox">`;
+      open=true;}
+    }else out+=dagRowHtml(a);
+  });
+  if(open)out+='</div></div>';
+  return out;
+}
+function dagCardHtml(d,collapseEmpty){
+  const g0=dagItemsView(d);
+  const kl=g0.filter(a=>!a.div&&a.klokke).slice().sort((x,y)=>String(x.klokke).localeCompare(String(y.klokke)));
+  const g=g0.filter(a=>a.div||!a.klokke);
+  const avCnt=g0.filter(a=>!a.div).length;
+  const wl=mcDayLbl(d),wd=wl.split(' ')[0],rest=wl.slice(wd.length+1);
+  const tom=!g0.length;
+  const klHtml=kl.length?`<div class="mc-mgrp"><div class="mc-mtab kl"><span>🕐 Med klokkeslett</span></div><div class="mc-mbox">${kl.map(a=>dagRowHtml(a)).join('')}</div></div>`:'';
+  return `<div class="mcdc${d===ymd(new Date())?' today':''}${(collapseEmpty&&tom)?' tomdag':''}"><div class="mcdc-h" data-dggoday="${d}"><b>${esc(wd.toUpperCase())}</b><span class="dt">${esc(rest)}${d===ymd(new Date())?' · i dag':''}</span><span class="n${avCnt?'':' zero'}">${avCnt}</span></div>${(collapseEmpty&&tom)?'':`<div class="mcdc-b" data-dgrows data-dgdate="${d}">${klHtml}${g.length?dagRowsHtml(g):(kl.length?'':'<div class="muted" style="padding:4px 2px;font-size:12.5px">Ingen oppgaver – velg «Dagens ToDo» i en avtale, eller dra hit.</div>')}</div>`}</div>`;
+}
+function dgKlokkeResync(cont){
+  const kb=cont.querySelector('.mc-mtab.kl');if(!kb)return;
+  const grp=kb.closest('.mc-mgrp');if(!grp)return;
+  const box=grp.querySelector('.mc-mbox');if(!box)return;
+  const its=[...box.querySelectorAll('[data-mcid]')].map(x=>dgFind(x.dataset.mcid)).filter(Boolean);
+  const times=its.map(x=>x.klokke).filter(Boolean).sort();
+  if(times.length&&times.length===its.length)its.forEach((x,i)=>{if(x.klokke!==times[i]){x.klokke=times[i];x.updated=Date.now();}});
+}
+function dagWireDrag(container){
+  container.querySelectorAll('[data-mcgrip]').forEach(g=>{
+    g.addEventListener('pointerdown',e=>{
+      e.preventDefault();
+      const row=g.closest('[data-mcid]');if(!row)return;
+      row.classList.add('mc-dragging');
+      const rows=()=>[...container.querySelectorAll('[data-mcid]')];
+      const mv=ev=>{
+        const others=rows().filter(x=>x!==row);
+        let placed=false;
+        for(const o of others){
+          const r=o.getBoundingClientRect();
+          if(ev.clientY<r.top+r.height/2){const ref=o.classList.contains('mc-mtab')?o.closest('.mc-mgrp'):o;ref.parentNode.insertBefore(row,ref);placed=true;break;}
+        }
+        if(!placed&&others.length){const last=others[others.length-1];(last.classList.contains('mc-mtab')?last.closest('.mc-mgrp'):last).after(row);}
+      };
+      const up=()=>{
+        document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);
+        row.classList.remove('mc-dragging');
+        rows().forEach((x,i)=>{const it=dgFind(x.dataset.mcid);if(it){it.dord=i;it.updated=Date.now();}});
+        dgKlokkeResync(container);
+        save();renderMiniCal();
+      };
+      document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
+    });
+  });
+}
+function dagWireDrag2(wrap){
+  wrap.querySelectorAll('[data-mcgrip]').forEach(g=>{
+    g.addEventListener('pointerdown',e=>{
+      e.preventDefault();
+      const row=g.closest('[data-mcid]');if(!row)return;
+      const grp=row.classList.contains('mc-mtab')?row.closest('.mc-mgrp'):null;
+      row.classList.add('mc-dragging');
+      const conts=[...wrap.querySelectorAll('[data-dgrows]')];
+      const mv=ev=>{
+        let tc=conts[0];
+        for(const c of conts){const r=c.closest('.mcdc').getBoundingClientRect();if(ev.clientY>=r.top-8)tc=c;}
+        const others=[...tc.querySelectorAll('[data-mcid]')].filter(x=>x!==row&&!(grp&&grp.contains(x)));
+        let placed=false;
+        for(const o of others){
+          const r=o.getBoundingClientRect();
+          if(ev.clientY<r.top+r.height/2){const ref=o.classList.contains('mc-mtab')?o.closest('.mc-mgrp'):o;ref.parentNode.insertBefore(grp||row,ref);placed=true;break;}
+        }
+        if(!placed){
+          if(others.length){const last=others[others.length-1];(last.classList.contains('mc-mtab')?last.closest('.mc-mgrp'):last).after(grp||row);}
+          else tc.appendChild(grp||row);
+        }
+      };
+      const up=()=>{
+        document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);
+        row.classList.remove('mc-dragging');
+        conts.forEach(c=>{const d=c.dataset.dgdate;
+          [...c.querySelectorAll('[data-mcid]')].forEach((x,i)=>{const it=dgFind(x.dataset.mcid);if(it){it.dord=i;if(it.div){if((it.ddate||'')!==d)it.ddate=d;}else if((it.todoDate||'')!==d){it.todoDate=d;}it.updated=Date.now();}});});
+        conts.forEach(c2=>dgKlokkeResync(c2));
+        save();renderMiniCal();
+      };
+      document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
+    });
+  });
+}
+function dgDivPop(id,date0new){
+  const a=id?mcal().find(x=>x.id===id):null;
+  const date0=a?(a.ddate||''):(date0new||ymd(new Date()));
+  let _dtype=(a&&a.plain)?'strek':'navn';
+  let n=0;
+  if(a){const list=dagItems(a.ddate||'');const i=list.findIndex(x=>x.id===a.id);for(let j=i+1;j<list.length;j++){if(list[j].div)break;n++;}}
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>${id?'Rediger skillelinje':'Ny skillelinje'}</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div class="f" style="margin-bottom:9px"><label>Type</label><div style="display:flex;gap:6px"><button type="button" class="chip ${_dtype==='navn'?'on':''}" data-dtype="navn">Med navn</button><button type="button" class="chip ${_dtype==='strek'?'on':''}" data-dtype="strek">— Kun strek</button></div></div>
+    <div class="f" id="dgDivNameWrap" style="margin-bottom:9px;${_dtype==='strek'?'display:none':''}"><label>Navn – søk i kartoteket eller skriv egen tekst</label><input id="dgDivLabel" value="${esc(a?a.label||'':'')}" placeholder="Skriv for å søke…" autocomplete="off"><div id="dgDivHits"></div></div>
+    <div class="f" style="margin-bottom:7px"><label>Flytt til dato · <span id="dgDivWd" style="text-transform:none;color:var(--petrol)">${date0?esc(mcDayLbl(date0)):''}</span></label><input id="dgDivDate" type="date" value="${esc(date0)}"></div>
+    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px">${[['0','I dag'],['1','I morgen'],['3','+3 dager'],['man','Neste man.'],['7','+1 uke']].map(pr=>`<button type="button" class="chip" data-dgdq="${pr[0]}" style="padding:5px 10px;font-size:11px">${pr[1]}</button>`).join('')}</div>
+    ${id&&n?`<div class="mc-mvinfo">${n} oppgave${n===1?'':'r'} i mappa flyttes sammen med skillelinja.</div>`:''}
+    <div class="mctxt-btns"><button type="button" class="btn ghost" data-c>Avbryt</button><button type="button" class="btn pri" data-dok>${svg('check')}<span>Lagre</span></button></div>
+  </div>`;
+  document.body.appendChild(ov);
+  const _wd=()=>{const di=document.getElementById('dgDivDate');const w=document.getElementById('dgDivWd');if(di&&w)w.textContent=di.value?mcDayLbl(di.value):'';};
+  const _di=document.getElementById('dgDivDate');if(_di)_di.addEventListener('change',_wd);
+  {const li=document.getElementById('dgDivLabel');const hi=document.getElementById('dgDivHits');
+   if(li&&hi){const draw=()=>{const t2=li.value.trim().toLowerCase();
+     const hits=divKart().filter(k=>(!t2||k.name.toLowerCase().includes(t2))&&k.name.toLowerCase()!==t2).slice(0,20);
+     hi.innerHTML=hits.map(k=>`<div class="mc-hit" data-dkpick="${esc(k.name)}"><span>${esc(k.name)}</span><span class="pl">＋</span></div>`).join('');};
+   li.addEventListener('input',draw);li.addEventListener('focus',draw);
+   hi.addEventListener('click',e2=>{const h=e2.target.closest('[data-dkpick]');if(h){li.value=h.dataset.dkpick;hi.innerHTML='';}});}}
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}
+    const dt=e.target.closest('[data-dtype]');if(dt){_dtype=dt.dataset.dtype;ov.querySelectorAll('[data-dtype]').forEach(x=>x.classList.toggle('on',x.dataset.dtype===_dtype));const nw=document.getElementById('dgDivNameWrap');if(nw)nw.style.display=_dtype==='strek'?'none':'';return;}
+    const q=e.target.closest('[data-dgdq]');
+    if(q){const v=q.dataset.dgdq;const di=document.getElementById('dgDivDate');let nd;
+      if(v==='man'){const d=new Date();const add=((8-d.getDay())%7)||7;d.setDate(d.getDate()+add);nd=ymd(d);}
+      else nd=mcAdd(ymd(new Date()),Number(v));
+      if(di){di.value=nd;_wd();}return;}
+    if(e.target.closest('[data-dok]')){
+      const label=_dtype==='strek'?'':(document.getElementById('dgDivLabel').value||'').trim();
+      const nd=document.getElementById('dgDivDate').value||'';
+      if(a){
+        a.label=label;a.plain=_dtype==='strek';a.updated=Date.now();
+        if((a.ddate||'')!==nd){
+          const l2=dagItems(a.ddate||'');
+          const ii=l2.findIndex(y=>y.id===a.id);
+          const grp=[];for(let j=ii+1;j<l2.length;j++){if(l2[j].div)break;grp.push(l2[j]);}
+          const tgt=dagItems(nd);
+          let base=(tgt.length?Math.max(...tgt.map(y=>y.dord||0)):0)+1;
+          a.ddate=nd;a.dord=base++;
+          grp.forEach(x2=>{x2.todoDate=nd;x2.dord=base++;x2.updated=Date.now();});
+          dgNormalize(nd);
+        }
+      }else{
+        mcal().push({id:uid(),div:true,dg:true,plain:_dtype==='strek',label,ddate:nd||ymd(new Date()),dord:1e8,created:Date.now(),updated:Date.now()});
+        dgNormalize(nd||ymd(new Date()));
+      }
+      save();ov.remove();renderMiniCal();return;}
+  });
+}
+function kjFind(id){return (db.todos||[]).find(x=>x.id===id)||mcal().find(x=>x.id===id);}
+function kjopRowsHtml(items){
+  let out='';let open=false;
+  items.forEach(a=>{
+    if(a.div){
+      if(open){out+='</div></div>';open=false;}
+      if(a.plain){out+=`<div class="mc-strek" data-mcid="${a.id}"><span class="mc-grip" data-kjgrip>${svg('grip')}</span><span class="l"></span>${db.meta.mcalRowBtns===false?'':`<button type="button" class="ib" data-kjdivdel="${a.id}" style="color:var(--red)">${svg('trash')}</button>`}</div>`;}
+      else{out+=`<div class="mc-mgrp"><div class="mc-mtab" data-mcid="${a.id}"><span class="mc-grip" data-kjgrip>${svg('grip')}</span><span>${esc(a.label||'')}</span>${db.meta.mcalRowBtns===false?'':`<span class="mc-mtx"><button type="button" class="ib" data-kjdivedit="${a.id}">${svg('edit')}</button><button type="button" class="ib" data-kjdivdel="${a.id}" style="color:var(--red)">${svg('trash')}</button></span>`}</div><div class="mc-mbox">`;
+      open=true;}
+    }else out+=kjopRow(a,true);
+  });
+  if(open)out+='</div></div>';
+  return out;
+}
+function kjDivPop(id){
+  const a=id?mcal().find(x=>x.id===id):null;
+  let _dtype=(a&&a.plain)?'strek':'navn';
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>${id?'Rediger skillelinje':'Ny skillelinje'}</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div class="f" style="margin-bottom:9px"><label>Type</label><div style="display:flex;gap:6px"><button type="button" class="chip ${_dtype==='navn'?'on':''}" data-dtype="navn">Med navn</button><button type="button" class="chip ${_dtype==='strek'?'on':''}" data-dtype="strek">— Kun strek</button></div></div>
+    <div class="f" id="kjDivNameWrap" style="margin-bottom:9px;${_dtype==='strek'?'display:none':''}"><label>Navn – søk i kartoteket eller skriv egen tekst</label><input id="kjDivLabel" value="${esc(a?a.label||'':'')}" placeholder="Skriv for å søke…" autocomplete="off"><div id="kjDivHits"></div></div>
+    <div class="mctxt-btns"><button type="button" class="btn ghost" data-c>Avbryt</button><button type="button" class="btn pri" data-dok>${svg('check')}<span>Lagre</span></button></div>
+  </div>`;
+  document.body.appendChild(ov);
+  {const li=document.getElementById('kjDivLabel');const hi=document.getElementById('kjDivHits');
+   if(li&&hi){const draw=()=>{const t2=li.value.trim().toLowerCase();
+     const hits=divKart().filter(k=>(!t2||k.name.toLowerCase().includes(t2))&&k.name.toLowerCase()!==t2).slice(0,20);
+     hi.innerHTML=hits.map(k=>`<div class="mc-hit" data-dkpick="${esc(k.name)}"><span>${esc(k.name)}</span><span class="pl">＋</span></div>`).join('');};
+   li.addEventListener('input',draw);li.addEventListener('focus',draw);
+   hi.addEventListener('click',e2=>{const h=e2.target.closest('[data-dkpick]');if(h){li.value=h.dataset.dkpick;hi.innerHTML='';}});}}
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}
+    const dt=e.target.closest('[data-dtype]');if(dt){_dtype=dt.dataset.dtype;ov.querySelectorAll('[data-dtype]').forEach(x=>x.classList.toggle('on',x.dataset.dtype===_dtype));const nw=document.getElementById('kjDivNameWrap');if(nw)nw.style.display=_dtype==='strek'?'none':'';return;}
+    if(e.target.closest('[data-dok]')){
+      const label=_dtype==='strek'?'':(document.getElementById('kjDivLabel').value||'').trim();
+      if(a){a.label=label;a.plain=_dtype==='strek';a.updated=Date.now();}
+      else{mcal().push({id:uid(),div:true,kj:true,plain:_dtype==='strek',label,kord:1e8,created:Date.now(),updated:Date.now()});}
+      save();ov.remove();renderMiniCal();return;}
+  });
+}
+function kjPrioOf(x,isTodo){const p2=isTodo?(x.prio||''):(x.todoPrio||'');return (p2==='A'||p2==='B'||p2==='C')?p2:'';}
+function kjRank(x,isTodo){const p2=kjPrioOf(x,isTodo);return p2==='A'?0:p2==='B'?1:p2==='C'?2:3;}
+let kjopQ='';
+let mcalQ='';
+let _todoRetAv=null;
+function kjDivs(){return mcal().filter(x=>x.div&&x.kj);}
+function kjopItems(){
+  const tds0=(db.todos||[]).filter(t=>(t.tags||[]).includes('kjop'));
+  const avs0=mcal().filter(a=>!a.div&&(a.title||'').toLowerCase().includes('kjøp'));
+  const base=(x,y)=>((x.kord==null?1e9:x.kord)-(y.kord==null?1e9:y.kord))||((y.created||0)-(x.created||0));
+  const sp=!!db.meta.kjopSortPrio;
+  const inner=isTodo=>(x,y)=>(sp?(kjRank(x,isTodo)-kjRank(y,isTodo)):0)||base(x,y);
+  const tds=tds0.filter(t=>!t.done&&!t.kjNa);
+  const avs=avs0.filter(a=>!a.done&&!a.kjNa);
+  const naa=tds0.filter(t=>!t.done&&t.kjNa).map(x=>({x,isT:true})).concat(avs0.filter(a=>!a.done&&a.kjNa).map(x=>({x,isT:false}))).sort((p2,q2)=>(sp?(kjRank(p2.x,p2.isT)-kjRank(q2.x,q2.isT)):0)||((q2.x.updated||0)-(p2.x.updated||0)));
+  const merged=tds.concat(kjDivs()).sort(base);
+  const out=[];let buf=[];
+  const flush=()=>{buf.sort(inner(true));out.push(...buf);buf=[];};
+  merged.forEach(it=>{if(it.div){flush();out.push(it);}else buf.push(it);});
+  flush();
+  const fer=tds0.filter(t=>t.done).map(x=>({x,isT:true})).concat(avs0.filter(a=>a.done).map(x=>({x,isT:false}))).sort((p2,q2)=>((q2.x.updated||0)-(p2.x.updated||0)));
+  return {tds:out,avs:avs.slice().sort(inner(false)),naa,fer,open:tds.length+avs.length+naa.length};
+}
+function kjopRow(x,isTodo){
+  const p2=kjPrioOf(x,isTodo);
+  return `<div class="mc-row${x.done?' done':''}" data-mcid="${x.id}">
+    <span class="mc-grip" data-kjgrip>${svg('grip')}</span>
+    <button type="button" class="mc-chk${x.done?' on':''}" data-kjdone="${x.id}">${x.done?svg('check'):''}</button>
+    <button type="button" class="mc-pri${p2?'':' none'}" data-kjpri="${x.id}"${p2?` style="background:${DG_PCOL[p2]||'#8a938f'}"`:''}>${p2?esc(p2):'＋'}</button>
+    <b data-kjedit="${x.id}">${esc(x.title||'')}</b>
+    ${isTodo?`<span class="mc-tp">ToDo</span>`:`<span class="mc-tp">Avtale${x.date?' · '+x.date.slice(8,10)+'.'+x.date.slice(5,7):''}</span>`}
+    <button type="button" class="mc-naa" data-kjna="${x.id}">${x.kjNa?'✕ Nå':'Nå'}</button><button type="button" class="ib" data-kjedit="${x.id}">${svg('edit')}</button>
+  </div>`;
+}
+function prioMenu(anchorEl,cur,onPick){
+  const old=document.getElementById('prioMenuPop');if(old)old.remove();
+  const m=document.createElement('div');m.id='prioMenuPop';m.className='mc-pmenu';
+  m.innerHTML=[['A','Må gjøres','#c0413b'],['B','Bør gjøres','#d98324'],['C','Kan vente','#2f8f5b'],['','Ingen prioritet','']].map(pr=>`<div class="mc-pmi${cur===pr[0]?' on':''}" data-ppick="${pr[0]}">${pr[0]?`<span class="b" style="background:${pr[2]}">${pr[0]}</span>`:`<span class="none">⊘</span>`}<span>${pr[1]}</span></div>`).join('');
+  document.body.appendChild(m);
+  const r=anchorEl.getBoundingClientRect();
+  m.style.left=Math.max(6,Math.min(r.left,window.innerWidth-210))+'px';
+  m.style.top=Math.min(r.bottom+4,window.innerHeight-190)+'px';
+  const close=()=>{m.remove();document.removeEventListener('pointerdown',out,true);};
+  const out=ev=>{if(!m.contains(ev.target))close();};
+  setTimeout(()=>document.addEventListener('pointerdown',out,true),0);
+  m.addEventListener('click',ev=>{const h=ev.target.closest('[data-ppick]');if(h){const v=h.dataset.ppick;close();onPick(v);}});
+}
+function kjopWireDrag(c){
+  c.querySelectorAll('[data-kjgrip]').forEach(g=>{
+    g.addEventListener('pointerdown',e=>{
+      e.preventDefault();
+      const row=g.closest('[data-mcid]');if(!row)return;
+      const grp=row.classList.contains('mc-mtab')?row.closest('.mc-mgrp'):null;
+      row.classList.add('mc-dragging');
+      const rows=()=>[...c.querySelectorAll('[data-mcid]')];
+      const mv=ev=>{const others=rows().filter(x=>x!==row&&!(grp&&grp.contains(x)));let placed=false;
+        for(const o of others){const r=o.getBoundingClientRect();if(ev.clientY<r.top+r.height/2){const ref=o.classList.contains('mc-mtab')?o.closest('.mc-mgrp'):o;ref.parentNode.insertBefore(grp||row,ref);placed=true;break;}}
+        if(!placed&&others.length){const last=others[others.length-1];(last.classList.contains('mc-mtab')?last.closest('.mc-mgrp'):last).after(grp||row);}};
+      const up=()=>{document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);row.classList.remove('mc-dragging');
+        rows().forEach((x,i)=>{const it=kjFind(x.dataset.mcid);if(it){it.kord=i;it.updated=Date.now();}});
+        save();renderMiniCal();};
+      document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
+    });
+  });
+}
+function mcalMoveTomorrow(id){
+  const a=mcal().find(x=>x.id===id);if(!a||a.div)return;
+  const from=a.date||'';
+  const nd=mcAdd(from||ymd(new Date()),1);
+  let cur=null;
+  if(from){const l2=mcal().filter(y=>(y.date||'')===from).sort(mcOrd);
+    for(const it of l2){if(it.div){cur=it.plain?null:it;}else if(it.id===a.id)break;}}
+  const tgt=()=>mcal().filter(y=>(y.date||'')===nd&&y.id!==a.id);
+  if(cur){
+    let dv=tgt().find(y=>y.div&&!y.plain&&(y.label||'')===(cur.label||''));
+    if(!dv){dv={id:uid(),div:true,label:cur.label||'',date:nd,ord:(tgt().length?Math.max(...tgt().map(y=>y.ord!=null?y.ord:0)):0)+1,created:Date.now(),updated:Date.now()};mcal().push(dv);}
+    const lt=tgt().sort(mcOrd);const di=lt.findIndex(y=>y.id===dv.id);
+    let end=dv.ord!=null?dv.ord:0;
+    for(let j=di+1;j<lt.length;j++){if(lt[j].div)break;end=lt[j].ord!=null?lt[j].ord:end;}
+    a.date=nd;a.ord=end+0.5;
+  }else{
+    a.date=nd;a.ord=(tgt().length?Math.max(...tgt().map(y=>y.ord!=null?y.ord:0)):0)+1;
+  }
+  a.updated=Date.now();
+  if(from)mcalNormalize(from);
+  mcalNormalize(nd);
+  save();toast('Flyttet til i morgen ('+nd.slice(8,10)+'.'+nd.slice(5,7)+'.)');renderMiniCal();
+}
+function mcalDivTomorrow(id){
+  const dvr=mcal().find(x=>x.id===id);if(!dvr||!dvr.div)return;
+  const from=dvr.date||'';
+  const nd=mcAdd(from||ymd(new Date()),1);
+  const l2=mcal().filter(y=>(y.date||'')===from).sort(mcOrd);
+  const ii=l2.findIndex(y=>y.id===dvr.id);
+  const grp=[];for(let j=ii+1;j<l2.length;j++){if(l2[j].div)break;grp.push(l2[j]);}
+  const ex=(!dvr.plain)?mcal().find(y=>y.div&&!y.plain&&!y.kj&&(y.date||'')===nd&&(y.label||'')===(dvr.label||'')&&y.id!==dvr.id):null;
+  if(ex){
+    const lt=mcal().filter(y=>(y.date||'')===nd).sort(mcOrd);
+    const di=lt.findIndex(y=>y.id===ex.id);
+    let end=ex.ord!=null?ex.ord:0;
+    for(let j=di+1;j<lt.length;j++){if(lt[j].div)break;end=lt[j].ord!=null?lt[j].ord:end;}
+    let b=end;
+    grp.forEach(x2=>{b+=0.001;x2.date=nd;x2.ord=b;x2.updated=Date.now();});
+    db.minical=mcal().filter(y=>y.id!==dvr.id);
+  }else{
+    const tgt=mcal().filter(y=>(y.date||'')===nd);
+    let base=(tgt.length?Math.max(...tgt.map(y=>y.ord!=null?y.ord:0)):0)+1;
+    dvr.date=nd;dvr.ord=base++;dvr.updated=Date.now();
+    grp.forEach(x2=>{x2.date=nd;x2.ord=base++;x2.updated=Date.now();});
+  }
+  if(from)mcalNormalize(from);
+  mcalNormalize(nd);
+  save();toast('Skillelinja og '+grp.length+' avtale'+(grp.length===1?'':'r')+' flyttet til i morgen');renderMiniCal();
+}
+function kjopWireSok(){
+  const i=document.getElementById('kjopSok');if(!i)return;
+  const apply=()=>{
+    kjopQ=i.value;
+    const q=kjopQ.trim().toLowerCase();
+    const w=document.getElementById('view');if(!w)return;
+    w.querySelectorAll('.mcdc-b .mc-row').forEach(r=>{
+      const b=r.querySelector('b');
+      r.style.display=(!q||(b&&b.textContent.toLowerCase().includes(q)))?'':'none';
+    });
+    w.querySelectorAll('.mcdc-b .mc-mgrp').forEach(g=>{
+      const vis=[...g.querySelectorAll('.mc-row')].some(r=>r.style.display!=='none');
+      g.style.display=(!q||vis)?'':'none';
+    });
+    w.querySelectorAll('.mcdc-b .mc-strek').forEach(sx=>{sx.style.display=q?'none':'';});
+  };
+  i.addEventListener('input',apply);
+  if(kjopQ)apply();
+}
+function mcFoldAllBtn(d){const dv3=mcal().filter(y=>y.div&&!y.plain&&!y.kj&&(y.date||'')===d);return dv3.length?`<button type="button" class="mc-fold" data-mcfoldall="${d}">${dv3.some(y=>!y.lukket)?'▾▾':'▸▸'}</button>`:'';}
+function mcSokApply(w,q){
+  w.querySelectorAll('.mcdc-b .mc-row').forEach(r=>{const b=r.querySelector('b[data-mcedit]');r.style.display=(!q||(b&&b.textContent.toLowerCase().includes(q)))?'':'none';});
+  w.querySelectorAll('.mcdc-b .mc-mgrp').forEach(g=>{const vis=[...g.querySelectorAll('.mc-row')].some(r=>r.style.display!=='none');g.style.display=(!q||vis)?'':'none';});
+  w.querySelectorAll('.mcdc-b .mc-strek').forEach(sx=>{sx.style.display=q?'none':'';});
+  w.querySelectorAll('.mcdc').forEach(dc=>{const vis=[...dc.querySelectorAll('.mc-row')].some(r=>r.style.display!=='none');dc.style.display=(!q||vis)?'':'none';});
+}
+function mcalWireSok(){
+  const i=document.getElementById('mcalSok');if(!i)return;
+  const apply=()=>{mcalQ=i.value;const w=document.getElementById('view');if(w)mcSokApply(w,mcalQ.trim().toLowerCase());};
+  i.addEventListener('input',apply);
+  if(mcalQ)apply();
+}
+function pkLists(){if(!Array.isArray(db.pakkeLists))db.pakkeLists=[];return db.pakkeLists;}
+function pkAllItems(){if(!Array.isArray(db.pakkeItems))db.pakkeItems=[];return db.pakkeItems;}
+function pkSelId(){const ls=pkLists();if(!ls.length)return '';let s2=db.meta.pakkeSel;if(!ls.some(l=>l.id===s2)){s2=ls[0].id;db.meta.pakkeSel=s2;}return s2;}
+const pkOrd=(a,b)=>((a.pord==null?1e9:a.pord)-(b.pord==null?1e9:b.pord))||((a.created||0)-(b.created||0));
+function pkItems(lid){return pkAllItems().filter(x=>x.lid===lid).sort(pkOrd);}
+function pkFind(id){return pkAllItems().find(x=>x.id===id);}
+function pkCount(lid){const it=pkAllItems().filter(x=>x.lid===lid&&!x.div);return {done:it.filter(x=>x.done).length,tot:it.length};}
+function pkNormalize(lid){pkItems(lid).forEach((x,i)=>{x.pord=i;});}
+function pakkeRowsHtml(items){
+  let out='';let open=false;
+  items.forEach(x=>{
+    if(x.div){
+      if(open){out+='</div></div>';open=false;}
+      if(x.plain){out+=`<div class="mc-strek" data-mcid="${x.id}"><span class="mc-grip" data-pkgrip>${svg('grip')}</span><span class="l"></span><button type="button" class="ib" data-pkdel="${x.id}" style="color:var(--red)">${svg('trash')}</button></div>`;}
+      else{out+=`<div class="mc-mgrp"><div class="mc-mtab" data-mcid="${x.id}"><span class="mc-grip" data-pkgrip>${svg('grip')}</span><span>${esc(x.label||'')}</span><span class="mc-mtx"><button type="button" class="ib" data-pkdivedit="${x.id}">${svg('edit')}</button><button type="button" class="ib" data-pkdel="${x.id}" style="color:var(--red)">${svg('trash')}</button></span></div><div class="mc-mbox">`;open=true;}
+    }else{
+      out+=`<div class="mc-row${x.done?' done':''}" data-mcid="${x.id}">
+        <span class="mc-grip" data-pkgrip>${svg('grip')}</span>
+        <button type="button" class="mc-chk${x.done?' on':''}" data-pkdone="${x.id}">${x.done?svg('check'):''}</button>
+        <b data-pkedit2="${x.id}">${esc(x.title||'')}</b>
+        <span class="mc-acts"><button type="button" class="ib" data-pkedit2="${x.id}">${svg('edit')}</button><button type="button" class="ib" data-pkdel="${x.id}" style="color:var(--red)">${svg('trash')}</button></span>
+      </div>`;
+    }
+  });
+  if(open)out+='</div></div>';
+  return out;
+}
+function pakkeBodyHtml(){
+  const ls=pkLists();const sel=pkSelId();
+  const l0=ls.find(x=>x.id===sel);
+  const cnt=sel?pkCount(sel):{done:0,tot:0};
+  const pct=cnt.tot?Math.round(cnt.done*100/cnt.tot):0;
+  const selRow=`<div class="mc-tools" style="margin-top:0;margin-bottom:8px;align-items:center">${ls.length?`<div style="flex:1;min-width:130px"><select id="pkSel" style="width:100%">${ls.map(l=>`<option value="${l.id}"${l.id===sel?' selected':''}>${esc(l.name||'Uten navn')} (${(()=>{const c2=pkCount(l.id);return c2.done+'/'+c2.tot;})()})</option>`).join('')}</select><div class="pk-bar"><i style="width:${pct}%"></i></div></div>`:`<span class="muted" style="font-size:12.5px">Ingen pakkelister enda.</span>`}<button class="chip" data-pknew>＋ Ny liste</button>${ls.length?`<button class="chip" data-pklistmeny>✎</button>`:''}</div>`;
+  const tools=ls.length?`<div class="mc-tools" style="margin-top:0;margin-bottom:8px"><button class="chip" data-pkadd>＋ Ny linje</button><button class="chip" data-pkadddiv>＋ Skillelinje</button></div>`:'';
+  const items=sel?pkItems(sel):[];
+  const body2=ls.length?`<div class="mcdc"><div class="mcdc-h" style="background:var(--mist);color:var(--petrol)"><b>🎒 ${esc(((l0&&l0.name)||'PAKKELISTE').toUpperCase())}</b><span class="n${cnt.tot?'':' zero'}">${cnt.done}/${cnt.tot}</span></div><div class="mcdc-b" data-pkrows>${items.length?pakkeRowsHtml(items):'<div class="muted" style="padding:4px 2px;font-size:12.5px">Tom liste – legg til linjer med «＋ Ny linje».</div>'}</div></div>`
+    :`<div class="muted" style="padding:10px 4px;font-size:13px">Trykk «＋ Ny liste» for å lage din første pakkeliste.</div>`;
+  return `<div class="op-frame">${selRow}${tools}${body2}</div>`;
+}
+function pakkeWireDrag(c){
+  c.querySelectorAll('[data-pkgrip]').forEach(g=>{
+    g.addEventListener('pointerdown',e=>{
+      e.preventDefault();
+      const row=g.closest('[data-mcid]');if(!row)return;
+      const grp=row.classList.contains('mc-mtab')?row.closest('.mc-mgrp'):null;
+      row.classList.add('mc-dragging');
+      const rows=()=>[...c.querySelectorAll('[data-mcid]')];
+      const mv=ev=>{const others=rows().filter(x=>x!==row&&!(grp&&grp.contains(x)));let placed=false;
+        for(const o of others){const r=o.getBoundingClientRect();if(ev.clientY<r.top+r.height/2){const ref=o.classList.contains('mc-mtab')?o.closest('.mc-mgrp'):o;ref.parentNode.insertBefore(grp||row,ref);placed=true;break;}}
+        if(!placed&&others.length){const last=others[others.length-1];(last.classList.contains('mc-mtab')?last.closest('.mc-mgrp'):last).after(grp||row);}};
+      const up=()=>{document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);row.classList.remove('mc-dragging');
+        rows().forEach((x,i)=>{const it=pkFind(x.dataset.mcid);if(it){it.pord=i;it.updated=Date.now();}});
+        save();renderMiniCal();};
+      document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
+    });
+  });
+}
+function pkLinePop(id){
+  const sel=pkSelId();const it=id?pkFind(id):null;
+  if(!sel&&!it)return;
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>${it?'Endre linje':'Ny linje'}</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div class="f" style="margin-bottom:9px"><label>Beskrivelse</label><input id="pkLineInp" value="${esc(it?(it.title||''):'')}" placeholder="Hva skal pakkes?" autocomplete="off"></div>
+    ${it?'':'<div style="font-size:11px;color:var(--muted);margin-bottom:8px">Enter legger til og lar deg skrive neste.</div>'}
+    <div class="mctxt-btns"><button type="button" class="btn ghost" data-c>${it?'Avbryt':'Lukk'}</button><button type="button" class="btn pri" data-ok>${svg('check')}<span>${it?'Lagre':'Legg til'}</span></button></div>
+  </div>`;
+  document.body.appendChild(ov);
+  const inp=()=>document.getElementById('pkLineInp');
+  setTimeout(()=>{const i2=inp();if(i2)i2.focus();},60);
+  const doOk=()=>{
+    const v=(inp().value||'').trim();if(!v){toast('Skriv en beskrivelse.');return;}
+    if(it){it.title=v;it.updated=Date.now();save();ov.remove();renderMiniCal();}
+    else{pkAllItems().push({id:uid(),lid:sel,title:v,done:false,pord:1e8,created:Date.now(),updated:Date.now()});pkNormalize(sel);save();renderMiniCal();inp().value='';inp().focus();}
+  };
+  ov.addEventListener('click',e=>{if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}if(e.target.closest('[data-ok]'))doOk();});
+  ov.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();doOk();}});
+}
+function pkDivPop(id){
+  const sel=pkSelId();const a=id?pkFind(id):null;
+  if(!sel&&!a)return;
+  let _dtype=(a&&a.plain)?'strek':'navn';
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>${id?'Rediger skillelinje':'Ny skillelinje'}</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div class="f" style="margin-bottom:9px"><label>Type</label><div style="display:flex;gap:6px"><button type="button" class="chip ${_dtype==='navn'?'on':''}" data-dtype="navn">Med navn</button><button type="button" class="chip ${_dtype==='strek'?'on':''}" data-dtype="strek">— Kun strek</button></div></div>
+    <div class="f" id="pkDivNameWrap" style="margin-bottom:9px;${_dtype==='strek'?'display:none':''}"><label>Navn – søk i kartoteket eller skriv egen tekst</label><input id="pkDivLabel" value="${esc(a?(a.label||''):'')}" placeholder="Skriv for å søke…" autocomplete="off"><div id="pkDivHits"></div></div>
+    <div class="mctxt-btns"><button type="button" class="btn ghost" data-c>Avbryt</button><button type="button" class="btn pri" data-dok>${svg('check')}<span>Lagre</span></button></div>
+  </div>`;
+  document.body.appendChild(ov);
+  {const li=document.getElementById('pkDivLabel');const hi=document.getElementById('pkDivHits');
+   if(li&&hi){const draw=()=>{const t2=li.value.trim().toLowerCase();
+     const hits=divKart().filter(k=>(!t2||k.name.toLowerCase().includes(t2))&&k.name.toLowerCase()!==t2).slice(0,20);
+     hi.innerHTML=hits.map(k=>`<div class="mc-hit" data-dkpick="${esc(k.name)}"><span>${esc(k.name)}</span><span class="pl">＋</span></div>`).join('');};
+   li.addEventListener('input',draw);li.addEventListener('focus',draw);
+   hi.addEventListener('click',e2=>{const h=e2.target.closest('[data-dkpick]');if(h){li.value=h.dataset.dkpick;hi.innerHTML='';}});}}
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}
+    const dt=e.target.closest('[data-dtype]');if(dt){_dtype=dt.dataset.dtype;ov.querySelectorAll('[data-dtype]').forEach(x=>x.classList.toggle('on',x.dataset.dtype===_dtype));const nw=document.getElementById('pkDivNameWrap');if(nw)nw.style.display=_dtype==='strek'?'none':'';return;}
+    if(e.target.closest('[data-dok]')){
+      const label=_dtype==='strek'?'':(document.getElementById('pkDivLabel').value||'').trim();
+      if(a){a.label=label;a.plain=_dtype==='strek';a.updated=Date.now();}
+      else{pkAllItems().push({id:uid(),lid:sel,div:true,plain:_dtype==='strek',label,pord:1e8,created:Date.now(),updated:Date.now()});pkNormalize(sel);}
+      save();ov.remove();renderMiniCal();return;}
+  });
+}
+function pkNewListPop(){
+  const ls=pkLists();
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>Ny pakkeliste</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div class="f" style="margin-bottom:9px"><label>Navn på lista</label><input id="pkName" placeholder="F.eks. Fjelltur uke 34"></div>
+    <div class="f" style="margin-bottom:9px"><label>Start fra</label><select id="pkFrom" style="width:100%"><option value="">Tom liste</option>${ls.map(l=>`<option value="${l.id}">⧉ Kopi av «${esc(l.name||'')}» (uten avkryssing)</option>`).join('')}</select></div>
+    <div class="mctxt-btns"><button type="button" class="btn ghost" data-c>Avbryt</button><button type="button" class="btn pri" data-ok>${svg('check')}<span>Opprett</span></button></div>
+  </div>`;
+  document.body.appendChild(ov);
+  setTimeout(()=>{const i2=document.getElementById('pkName');if(i2)i2.focus();},60);
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}
+    if(e.target.closest('[data-ok]')){
+      const nm=(document.getElementById('pkName').value||'').trim();if(!nm){toast('Skriv et navn.');return;}
+      const nid=uid();
+      pkLists().push({id:nid,name:nm,created:Date.now(),updated:Date.now()});
+      const from=document.getElementById('pkFrom').value;
+      if(from){pkItems(from).forEach((x,i)=>{pkAllItems().push(Object.assign({},x,{id:uid(),lid:nid,done:false,pord:i,created:Date.now(),updated:Date.now()}));});}
+      db.meta.pakkeSel=nid;save();ov.remove();toast('Pakkeliste opprettet');renderMiniCal();return;}
+  });
+}
+function pkListMeny(){
+  const sel=pkSelId();const l0=pkLists().find(x=>x.id===sel);if(!l0)return;
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>${esc(l0.name||'Pakkeliste')}</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div style="display:flex;flex-direction:column;gap:7px">
+      <button type="button" class="btn ghost" data-pknavn>✎ Endre navn</button>
+      <button type="button" class="btn ghost" data-pkkopi>⧉ Kopier liste (uten avkryssing)</button>
+      <button type="button" class="btn ghost" data-pktom>☐ Tøm avkryssing</button>
+      <button type="button" class="btn ghost" data-pkslett style="color:var(--red);border-color:var(--red)">🗑 Slett liste</button>
+    </div>
+  </div>`;
+  document.body.appendChild(ov);
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}
+    if(e.target.closest('[data-pknavn]')){const nv=window.prompt('Navn på lista:',l0.name||'');if(nv!=null&&nv.trim()){l0.name=nv.trim();l0.updated=Date.now();save();renderMiniCal();}ov.remove();return;}
+    if(e.target.closest('[data-pkkopi]')){const nid=uid();pkLists().push({id:nid,name:(l0.name||'Liste')+' (kopi)',created:Date.now(),updated:Date.now()});pkItems(sel).forEach((x,i)=>{pkAllItems().push(Object.assign({},x,{id:uid(),lid:nid,done:false,pord:i,created:Date.now(),updated:Date.now()}));});db.meta.pakkeSel=nid;save();toast('Liste kopiert');renderMiniCal();ov.remove();return;}
+    if(e.target.closest('[data-pktom]')){pkAllItems().forEach(x=>{if(x.lid===sel&&!x.div&&x.done){x.done=false;x.updated=Date.now();}});save();toast('Avkryssing tømt');renderMiniCal();ov.remove();return;}
+    if(e.target.closest('[data-pkslett]')){if(confirm('Slette pakkelista «'+(l0.name||'')+'» og alle linjene i den?')){db.pakkeLists=pkLists().filter(x=>x.id!==sel);db.pakkeItems=pkAllItems().filter(x=>x.lid!==sel);delete db.meta.pakkeSel;save();toast('Pakkeliste slettet');renderMiniCal();}ov.remove();return;}
+  });
+}
 function renderMiniCal(){
   if(!mcalAnchor)mcalAnchor=ymd(new Date());
   const v=document.getElementById('view');
@@ -4103,15 +4769,21 @@ function renderMiniCal(){
   const list=mcal();
   const ws=mcWeekStart(mcalAnchor),we=mcAdd(ws,6);
   const _n2=mcAdd(mcalAnchor||ymd(new Date()),1);
-  const lbl=mode==='dag'?mcDayLbl(mcalAnchor):mode==='2dag'?('2 dager · '+mcalAnchor.slice(8,10)+'.'+mcalAnchor.slice(5,7)+'.–'+_n2.slice(8,10)+'.'+_n2.slice(5,7)+'.'):('Uke '+mcIsoWeek(ws)+' · '+ws.slice(8,10)+'.'+ws.slice(5,7)+'.–'+we.slice(8,10)+'.'+we.slice(5,7)+'.');
+  if(mode==='dagens'&&!dagAnchor)dagAnchor=ymd(new Date());
+  const _dgm=getDagMode();
+  const _dn2=mode==='dagens'?mcAdd(dagAnchor,1):'';
+  const _dws=mode==='dagens'?mcWeekStart(dagAnchor):'';
+  const lbl=mode==='pakke'?('Pakkeliste · '+(function(){const s2=pkSelId();if(!s2)return '0/0';const c2=pkCount(s2);return c2.done+'/'+c2.tot;})()):mode==='kjop'?('Kjøp · '+kjopItems().open+' åpne'):mode==='dagens'
+    ?(_dgm==='dag'?mcDayLbl(dagAnchor):_dgm==='2dag'?('2 dager · '+dagAnchor.slice(8,10)+'.'+dagAnchor.slice(5,7)+'.–'+_dn2.slice(8,10)+'.'+_dn2.slice(5,7)+'.'):('Uke '+mcIsoWeek(_dws)+' · '+_dws.slice(8,10)+'.'+_dws.slice(5,7)+'.–'+mcAdd(_dws,6).slice(8,10)+'.'+mcAdd(_dws,6).slice(5,7)+'.'))
+    :mode==='dag'?mcDayLbl(mcalAnchor):mode==='2dag'?('2 dager · '+mcalAnchor.slice(8,10)+'.'+mcalAnchor.slice(5,7)+'.–'+_n2.slice(8,10)+'.'+_n2.slice(5,7)+'.'):('Uke '+mcIsoWeek(ws)+' · '+ws.slice(8,10)+'.'+ws.slice(5,7)+'.–'+we.slice(8,10)+'.'+we.slice(5,7)+'.');
   let body='';
   if(mode==='dag'){
     const dayL=list.filter(a=>(a.date||'')===mcalAnchor).sort(mcOrd);
-    const undated=list.filter(a=>!a.date).sort(mcOrd);
+    const undated=list.filter(a=>!a.date&&!a.dg&&!a.kj).sort(mcOrd);
     const avCnt=dayL.filter(a=>!a.div).length;
     const _wl=mcDayLbl(mcalAnchor),_wd=_wl.split(' ')[0],_rest=_wl.slice(_wd.length+1);
     body=`<div class="op-frame">
-      <div class="mcdc${mcalAnchor===ymd(new Date())?' today':''}"><div class="mcdc-h"><b>${esc(_wd.toUpperCase())}</b><span class="dt">${esc(_rest)}${mcalAnchor===ymd(new Date())?' · i dag':''}</span><span class="n${avCnt?'':' zero'}">${avCnt}</span></div><div class="mcdc-b" data-mcrows data-mcdate="${mcalAnchor}">${dayL.length?mcalRowsHtml(dayL):'<div class="muted" style="padding:4px 2px;font-size:13px">Ingen avtaler denne dagen.</div>'}</div></div>
+      <div class="mcdc${mcalAnchor===ymd(new Date())?' today':''}"><div class="mcdc-h"><b>${esc(_wd.toUpperCase())}</b><span class="dt">${esc(_rest)}${mcalAnchor===ymd(new Date())?' · i dag':''}</span>${mcFoldAllBtn(mcalAnchor)}<span class="n${avCnt?'':' zero'}">${avCnt}</span></div><div class="mcdc-b" data-mcrows data-mcdate="${mcalAnchor}">${dayL.length?mcalRowsHtml(dayL):'<div class="muted" style="padding:4px 2px;font-size:13px">Ingen avtaler denne dagen.</div>'}</div></div>
       ${undated.length?`<div class="mcdc"><div class="mcdc-h"><b>UTEN DATO</b><span class="n">${undated.filter(a=>!a.div).length}</span></div><div class="mcdc-b" data-mcrows data-mcdate="">${mcalRowsHtml(undated)}</div></div>`:''}
       <div style="margin-top:9px;display:flex;gap:7px;flex-wrap:wrap"><button class="btn pri" data-mcadd style="flex:1">${svg('plus')}<span>Ny avtale</span></button><button class="btn ghost" data-mcadddiv style="flex:1">${svg('plus')}<span>Skillelinje</span></button></div>
     </div>`;
@@ -4121,55 +4793,110 @@ function renderMiniCal(){
       const g=list.filter(a=>(a.date||'')===d).sort(mcOrd);
       const avCnt=g.filter(a=>!a.div).length;
       const wl=mcDayLbl(d),wd=wl.split(' ')[0],rest=wl.slice(wd.length+1);
-      return `<div class="mcdc${d===ymd(new Date())?' today':''}"><div class="mcdc-h" data-mcgoday="${d}"><b>${esc(wd.toUpperCase())}</b><span class="dt">${esc(rest)}${d===ymd(new Date())?' · i dag':''}</span><span class="n${avCnt?'':' zero'}">${avCnt}</span></div><div class="mcdc-b" data-mcrows data-mcdate="${d}">${g.length?mcalRowsHtml(g):'<div class="muted" style="padding:4px 2px;font-size:12px">Ingen avtaler – dra hit eller legg til.</div>'}</div></div>`;
+      return `<div class="mcdc${d===ymd(new Date())?' today':''}"><div class="mcdc-h" data-mcgoday="${d}"><b>${esc(wd.toUpperCase())}</b><span class="dt">${esc(rest)}${d===ymd(new Date())?' · i dag':''}</span>${mcFoldAllBtn(d)}<span class="n${avCnt?'':' zero'}">${avCnt}</span></div><div class="mcdc-b" data-mcrows data-mcdate="${d}">${g.length?mcalRowsHtml(g):'<div class="muted" style="padding:4px 2px;font-size:12px">Ingen avtaler – dra hit eller legg til.</div>'}</div></div>`;
     }).join('')}</div>
     <div style="margin-top:10px"><button class="btn pri" data-mcadd style="width:100%">${svg('plus')}<span>Ny avtale</span></button></div></div>`;
+  }else if(mode==='kjop'){
+    const k=kjopItems();
+    body=`<div class="op-frame"><div class="mc-tools" style="margin-top:0;margin-bottom:8px"><input id="kjopSok" placeholder="Søk i Kjøp…" autocomplete="off" value="${esc(kjopQ)}" style="flex:1 1 110px;min-width:100px;border:1.5px solid var(--line);border-radius:8px;padding:7px 10px;font-size:13px;font-weight:600"><button class="chip ${db.meta.kjopSortPrio?'on':''}" data-kjsortprio>Sorter A-B-C: ${db.meta.kjopSortPrio?'På':'Av'}</button><button class="chip" data-kjadddiv>＋ Skillelinje</button></div>
+      <div class="mcdc"><div class="mcdc-h" style="background:var(--mist);color:var(--petrol)"><b>KJØP</b><span class="dt">fra ToDo-er og avtaler</span><span class="n${k.open?'':' zero'}">${k.open}</span></div><div class="mcdc-b">
+      ${k.naa.length?`<div class="mc-mgrp"><div class="mc-mtab naa"><span>🔥 NÅ</span><span style="margin-left:auto">${k.naa.length}</span></div><div class="mc-mbox">${k.naa.map(o=>kjopRow(o.x,o.isT)).join('')}</div></div>`:''}<div class="mc-mgrp"><div class="mc-mtab"><span>Fra ToDo-ene (merket Kjøp)</span></div><div class="mc-mbox" data-kjrows>${k.tds.length?kjopRowsHtml(k.tds):'<div class="muted" style="padding:4px 2px;font-size:12.5px">Ingen ToDo-er merket Kjøp.</div>'}</div></div>
+      <div class="mc-mgrp"><div class="mc-mtab"><span>Fra Mini kalenderen</span></div><div class="mc-mbox" data-kjrows>${k.avs.length?k.avs.map(a2=>kjopRow(a2,false)).join(''):'<div class="muted" style="padding:4px 2px;font-size:12.5px">Ingen avtaler med «kjøp» i navnet.</div>'}</div></div>${k.fer.length?`<div class="mc-mgrp"><div class="mc-mtab" style="background:#e4f2ea;color:#22684a"><span>✔ Ferdig</span><span style="margin-left:auto">${k.fer.length}</span></div><div class="mc-mbox">${k.fer.map(o=>kjopRow(o.x,o.isT)).join('')}</div></div>`:''}
+      </div></div></div>`;
+  }else if(mode==='pakke'){
+    body=pakkeBodyHtml();
+  }else if(mode==='dagens'){
+    const subseg=`<div class="mc-tools" style="margin-top:0;margin-bottom:8px"><button class="chip ${_dgm==='dag'?'on':''}" data-dgmode="dag">Dag</button><button class="chip ${_dgm==='2dag'?'on':''}" data-dgmode="2dag">2 dager</button><button class="chip ${_dgm==='uke'?'on':''}" data-dgmode="uke">Uke</button></div>`;
+    const btns=`<div style="margin-top:10px;display:flex;gap:7px"><button class="btn pri" data-mcadd style="flex:1">${svg('plus')}<span>Ny avtale</span></button><button class="btn ghost" data-dgadddiv style="flex:1">${svg('plus')}<span>Skillelinje</span></button></div>`;
+    let inner='';
+    if(_dgm==='dag')inner=dagCardHtml(dagAnchor,false);
+    else if(_dgm==='2dag')inner=`<div class="mc-2grid" data-mc2>${[dagAnchor,_dn2].map(d=>dagCardHtml(d,false)).join('')}</div>`;
+    else{const days2=[];for(let i=0;i<7;i++)days2.push(mcAdd(_dws,i));inner=days2.map(d=>dagCardHtml(d,true)).join('');}
+    body=`<div class="op-frame">${subseg}${inner}${btns}</div>`;
   }else{
     const days=[];for(let i=0;i<7;i++)days.push(mcAdd(ws,i));
     body=`<div class="op-frame">${days.map(d=>{
       const g=list.filter(a=>(a.date||'')===d).sort(mcOrd);
       const avCnt=g.filter(a=>!a.div).length;
       const wl=mcDayLbl(d),wd=wl.split(' ')[0],rest=wl.slice(wd.length+1);
-      return `<div class="mcdc${d===ymd(new Date())?' today':''}${g.length?'':' tomdag'}"><div class="mcdc-h" data-mcgoday="${d}"><b>${esc(wd.toUpperCase())}</b><span class="dt">${esc(rest)}${d===ymd(new Date())?' · i dag':''}</span><span class="n${avCnt?'':' zero'}">${avCnt}</span></div>${g.length?`<div class="mcdc-b" data-mcrows data-mcdate="${d}">${mcalRowsHtml(g)}</div>`:''}</div>`;
+      return `<div class="mcdc${d===ymd(new Date())?' today':''}${g.length?'':' tomdag'}"><div class="mcdc-h" data-mcgoday="${d}"><b>${esc(wd.toUpperCase())}</b><span class="dt">${esc(rest)}${d===ymd(new Date())?' · i dag':''}</span>${mcFoldAllBtn(d)}<span class="n${avCnt?'':' zero'}">${avCnt}</span></div>${g.length?`<div class="mcdc-b" data-mcrows data-mcdate="${d}">${mcalRowsHtml(g)}</div>`:''}</div>`;
     }).join('')}
     <div style="margin-top:10px"><button class="btn pri" data-mcadd style="width:100%">${svg('plus')}<span>Ny avtale</span></button></div></div>`;
   }
   let lblTop,lblMain;
-  if(mode==='dag'){const _w=lbl.split(' ')[0];lblTop=_w;lblMain=lbl.slice(_w.length+1);}
+  if(mode==='dag'||(mode==='dagens'&&_dgm==='dag')){const _w=lbl.split(' ')[0];lblTop=_w;lblMain=lbl.slice(_w.length+1);}
   else{const _pp=lbl.split(' · ');lblTop=_pp[0];lblMain=_pp[1]||'';}
   v.innerHTML=`<div class="op-frame tight">
-      <div class="mc-seg"><button class="${mode==='dag'?'on':''}" data-mcmode="dag">Dag</button><button class="${mode==='2dag'?'on':''}" data-mcmode="2dag">2 dager</button><button class="${mode==='uke'?'on':''}" data-mcmode="uke">Uke</button></div>
+      <div class="mc-seg"><button class="${mode==='dag'?'on':''}" data-mcmode="dag">Dag</button><button class="${mode==='2dag'?'on':''}" data-mcmode="2dag">2 dager</button><button class="${mode==='uke'?'on':''}" data-mcmode="uke">Uke</button><button class="${mode==='dagens'?'on':''}" data-mcmode="dagens">Dagens</button><button class="${mode==='kjop'?'on':''}" data-mcmode="kjop">Kjøp</button><button class="${mode==='pakke'?'on':''}" data-mcmode="pakke">Pakke</button></div>
     </div>
     <div class="op-frame tight">
       <div class="mc-nav2"><button class="mc-nb" data-mcnav="prev">‹</button><span class="mc-mid"><span class="wd">${esc(lblTop)}</span><b>${esc(lblMain)}</b></span><button class="mc-nb" data-mcnav="next">›</button><button class="mc-idag" data-mcnav="today">I dag</button></div>
     </div>
     <div class="op-frame tight">
-      <div class="mc-tools" style="margin-top:0"><button class="chip ${db.meta.mcalToolsOpen?'on':''}" data-mctools>Verktøy</button>${db.meta.mcalToolsOpen?`<button class="chip ${db.meta.mcalRowBtns===false?'':'on'}" data-mcrowbtns>Linjeknapper: ${db.meta.mcalRowBtns===false?'Av':'På'}</button><span class="mc-tl">Tekst</span><span class="mc-seg2">${[[12,'s1'],[13.5,'s2'],[16.5,'s3']].map(pr=>`<button class="${pr[1]}${(db.meta.mcalFs||13.5)===pr[0]?' on':''}" data-mcfs="${pr[0]}">A</button>`).join('')}</span><span class="mc-tl">Rad</span><span class="mc-seg2">${[[1,'r1'],[3,'r2'],[9,'r3']].map(pr=>`<button class="rr ${pr[1]}${(db.meta.mcalPad==null?3:db.meta.mcalPad)===pr[0]?' on':''}" data-mcpad="${pr[0]}"><span></span><span></span><span></span></button>`).join('')}</span>`:''}</div>
-    </div><div style="--mcfs:${db.meta.mcalFs||13.5}px;--mcpad:${db.meta.mcalPad==null?3:db.meta.mcalPad}px">${body}</div><div class="build">TettPå iPhone · versjon ${BUILD_NO} · ${BUILD_DATE}</div>`;
-  const mb=document.getElementById('mcAddBtn');if(mb)mb.onclick=()=>mcalSheet('',{date:mode!=='uke'?mcalAnchor:ymd(new Date())});
-  {const two=v.querySelector('[data-mc2]');if(two)mcalWireDrag2(two);else v.querySelectorAll('[data-mcrows]').forEach(c=>mcalWireDrag(c));}
+      <div class="mc-tools" style="margin-top:0"><button class="chip ${db.meta.mcalToolsOpen?'on':''}" data-mctools>Verktøy</button>${['dag','2dag','uke'].indexOf(getMcalMode())>=0?`<button class="chip ${db.meta.mcalTomBtn?'on':''}" data-mctombtn>I morgen: ${db.meta.mcalTomBtn?'På':'Av'}</button><button class="chip ${db.meta.mcalDivTomBtn?'on':''}" data-mcdivtombtn>Skillelinje: ${db.meta.mcalDivTomBtn?'På':'Av'}</button>`:''}${db.meta.mcalToolsOpen?`<button class="chip ${db.meta.mcalRowBtns===false?'':'on'}" data-mcrowbtns>Linjeknapper: ${db.meta.mcalRowBtns===false?'Av':'På'}</button>${getMcalMode()==='dagens'?`<button class="chip ${db.meta.dagSortPrio?'on':''}" data-dgsortprio>Sorter A-B-C: ${db.meta.dagSortPrio?'På':'Av'}</button>`:''}<span class="mc-tl">Tekst</span><span class="mc-seg2">${[[12,'s1'],[13.5,'s2'],[16.5,'s3']].map(pr=>`<button class="${pr[1]}${(db.meta.mcalFs||13.5)===pr[0]?' on':''}" data-mcfs="${pr[0]}">A</button>`).join('')}</span><span class="mc-tl">Rad</span><span class="mc-seg2">${[[1,'r1'],[3,'r2'],[9,'r3']].map(pr=>`<button class="rr ${pr[1]}${(db.meta.mcalPad==null?3:db.meta.mcalPad)===pr[0]?' on':''}" data-mcpad="${pr[0]}"><span></span><span></span><span></span></button>`).join('')}</span>`:''}</div>
+    </div>${['dag','2dag','uke','dagens'].indexOf(getMcalMode())>=0?`<div class="op-frame tight"><input id="mcalSok" class="mc-soki" placeholder="Søk i avtalene…" autocomplete="off" value="${esc(mcalQ)}" style="width:100%"></div>`:''}<div style="--mcfs:${db.meta.mcalFs||13.5}px;--mcpad:${db.meta.mcalPad==null?3:db.meta.mcalPad}px">${body}</div><div class="build">TettPå iPhone · versjon ${BUILD_NO} · ${BUILD_DATE}</div>`;
+  const mb=document.getElementById('mcAddBtn');if(mb)mb.onclick=()=>{if(getMcalMode()==='dagens')mcalSheet('',{date:dagAnchor||ymd(new Date()),todoDate:dagAnchor||ymd(new Date())});else mcalSheet('',{date:getMcalMode()!=='uke'?mcalAnchor:ymd(new Date())});};
+  {const m3=getMcalMode();if(m3==='pakke'){v.querySelectorAll('[data-pkrows]').forEach(c=>pakkeWireDrag(c));}else if(m3==='kjop'){v.querySelectorAll('[data-kjrows]').forEach(c=>kjopWireDrag(c));kjopWireSok();}else if(m3==='dagens'){const two=v.querySelector('[data-mc2]');if(two)dagWireDrag2(two);else v.querySelectorAll('[data-dgrows]').forEach(c=>dagWireDrag(c));}else{const two=v.querySelector('[data-mc2]');if(two)mcalWireDrag2(two);else v.querySelectorAll('[data-mcrows]').forEach(c=>mcalWireDrag(c));}mcalWireSok();}
+  v.onchange=e=>{if(e.target&&e.target.id==='pkSel'){db.meta.pakkeSel=e.target.value;save();renderMiniCal();}};
   v.onclick=e=>{
     const md=e.target.closest('[data-mcmode]');if(md){db.meta.mcalMode=md.dataset.mcmode;save();renderMiniCal();return;}
+    const fa=e.target.closest('[data-mcfoldall]');if(fa){const d4=fa.dataset.mcfoldall;const dvs=mcal().filter(y=>y.div&&!y.plain&&!y.kj&&(y.date||'')===d4);if(dvs.length){const anyOpen=dvs.some(y=>!y.lukket);dvs.forEach(y=>{y.lukket=anyOpen;y.updated=Date.now();});save();renderMiniCal();}return;}
     const gd=e.target.closest('[data-mcgoday]');if(gd){mcalAnchor=gd.dataset.mcgoday;db.meta.mcalMode='dag';save();renderMiniCal();return;}
+    const dgm=e.target.closest('[data-dgmode]');if(dgm){db.meta.dagMode=dgm.dataset.dgmode;save();renderMiniCal();return;}
+    const dgg=e.target.closest('[data-dggoday]');if(dgg){dagAnchor=dgg.dataset.dggoday;db.meta.dagMode='dag';save();renderMiniCal();return;}
+    if(e.target.closest('[data-dgadddiv]')){dgDivPop('',getDagMode()!=='uke'?(dagAnchor||ymd(new Date())):ymd(new Date()));return;}
+    const dgv=e.target.closest('[data-dgdivedit]');if(dgv){dgDivPop(dgv.dataset.dgdivedit);return;}
+    if(e.target.closest('[data-pknew]')){pkNewListPop();return;}
+    if(e.target.closest('[data-pklistmeny]')){pkListMeny();return;}
+    if(e.target.closest('[data-pkadd]')){pkLinePop('');return;}
+    if(e.target.closest('[data-pkadddiv]')){pkDivPop('');return;}
+    const pdn=e.target.closest('[data-pkdone]');if(pdn){const it=pkFind(pdn.dataset.pkdone);if(it){it.done=!it.done;it.updated=Date.now();save();renderMiniCal();}return;}
+    const pdv=e.target.closest('[data-pkdivedit]');if(pdv){pkDivPop(pdv.dataset.pkdivedit);return;}
+    const pdl=e.target.closest('[data-pkdel]');if(pdl){const id2=pdl.dataset.pkdel;const it=pkFind(id2);
+      if(it&&!it.div&&!confirm('Slette linja «'+(it.title||'')+'»?'))return;
+      db.pakkeItems=pkAllItems().filter(y=>y.id!==id2);save();renderMiniCal();return;}
+    const ped=e.target.closest('[data-pkedit2]');if(ped){pkLinePop(ped.dataset.pkedit2);return;}
+    const kd=e.target.closest('[data-kjdone]');if(kd){const it=(db.todos||[]).find(x=>x.id===kd.dataset.kjdone)||mcal().find(x=>x.id===kd.dataset.kjdone);if(it){it.done=!it.done;it.updated=Date.now();save();renderMiniCal();}return;}
+    const kp=e.target.closest('[data-kjpri]');
+    if(kp){const id3=kp.dataset.kjpri;const isT=(db.todos||[]).some(x=>x.id===id3);const it=kjFind(id3);
+      if(it){prioMenu(kp,kjPrioOf(it,isT),v=>{if(isT)it.prio=v;else it.todoPrio=v;it.updated=Date.now();save();renderMiniCal();});}return;}
+    if(e.target.closest('[data-kjsortprio]')){db.meta.kjopSortPrio=!db.meta.kjopSortPrio;save();renderMiniCal();return;}
+    if(e.target.closest('[data-kjadddiv]')){kjDivPop('');return;}
+    const kdv=e.target.closest('[data-kjdivedit]');if(kdv){kjDivPop(kdv.dataset.kjdivedit);return;}
+    const kdl=e.target.closest('[data-kjdivdel]');if(kdl){db.minical=mcal().filter(y=>y.id!==kdl.dataset.kjdivdel);save();renderMiniCal();return;}
+    const kna=e.target.closest('[data-kjna]');if(kna){const it=kjFind(kna.dataset.kjna);if(it){it.kjNa=!it.kjNa;it.updated=Date.now();save();renderMiniCal();}return;}
+    const ke=e.target.closest('[data-kjedit]');if(ke){const id3=ke.dataset.kjedit;if((db.todos||[]).some(x=>x.id===id3))todoSheet(id3);else if(mcal().some(x=>x.id===id3))mcalSheet(id3);return;}
+    const pcy=e.target.closest('[data-mcpricyc]');if(pcy){const a=dgFind(pcy.dataset.mcpricyc);if(a){prioMenu(pcy,a.todoPrio||'',v=>{a.todoPrio=v;a.updated=Date.now();save();renderMiniCal();});}return;}
+    const trm=e.target.closest('[data-dgtdrm]');if(trm){const t2=(db.todos||[]).find(x=>x.id===trm.dataset.dgtdrm);if(t2){t2.todoDate='';t2.updated=Date.now();save();toast('Fjernet fra Dagens oppgaver');renderMiniCal();}return;}
+    if(e.target.closest('[data-mcdivtombtn]')){db.meta.mcalDivTomBtn=!db.meta.mcalDivTomBtn;save();renderMiniCal();return;}
+    if(e.target.closest('[data-mctombtn]')){db.meta.mcalTomBtn=!db.meta.mcalTomBtn;save();renderMiniCal();return;}
     if(e.target.closest('[data-mctools]')){db.meta.mcalToolsOpen=!db.meta.mcalToolsOpen;save();renderMiniCal();return;}
     if(e.target.closest('[data-mcrowbtns]')){db.meta.mcalRowBtns=db.meta.mcalRowBtns===false;save();renderMiniCal();return;}
+    if(e.target.closest('[data-dgsortprio]')){db.meta.dagSortPrio=!db.meta.dagSortPrio;save();renderMiniCal();return;}
     const fsb=e.target.closest('[data-mcfs]');if(fsb){db.meta.mcalFs=Number(fsb.dataset.mcfs);save();renderMiniCal();return;}
     const pdb=e.target.closest('[data-mcpad]');if(pdb){db.meta.mcalPad=Number(pdb.dataset.mcpad);save();renderMiniCal();return;}
-    const nv=e.target.closest('[data-mcnav]');if(nv){const k=nv.dataset.mcnav;if(k==='today')mcalAnchor=ymd(new Date());else mcalAnchor=mcAdd(mcalAnchor,(getMcalMode()==='uke'?7:1)*(k==='prev'?-1:1));renderMiniCal();return;}
-    if(e.target.closest('[data-mcadd]')){mcalSheet('',{date:getMcalMode()!=='uke'?mcalAnchor:ymd(new Date())});return;}
+    const nv=e.target.closest('[data-mcnav]');if(nv){const k=nv.dataset.mcnav;
+      if(getMcalMode()==='dagens'){if(k==='today')dagAnchor=ymd(new Date());else dagAnchor=mcAdd(dagAnchor||ymd(new Date()),(getDagMode()==='uke'?7:1)*(k==='prev'?-1:1));}
+      else{if(k==='today')mcalAnchor=ymd(new Date());else mcalAnchor=mcAdd(mcalAnchor,(getMcalMode()==='uke'?7:1)*(k==='prev'?-1:1));}
+      renderMiniCal();return;}
+    if(e.target.closest('[data-mcadd]')){if(getMcalMode()==='dagens')mcalSheet('',{date:dagAnchor||ymd(new Date()),todoDate:dagAnchor||ymd(new Date())});else mcalSheet('',{date:getMcalMode()!=='uke'?mcalAnchor:ymd(new Date())});return;}
     if(e.target.closest('[data-mcadddiv]')){
       const label=(window.prompt('Tekst på skillelinja (valgfritt):','')||'').trim();
       mcal().push({id:uid(),div:true,label,date:getMcalMode()!=='uke'?mcalAnchor:ymd(new Date()),ord:1e8,created:Date.now(),updated:Date.now()});
       mcalNormalize(getMcalMode()==='dag'?mcalAnchor:ymd(new Date()));
       save();renderMiniCal();return;}
-    const dn=e.target.closest('[data-mcdone]');if(dn){const a=mcal().find(x=>x.id===dn.dataset.mcdone);if(a){a.done=!a.done;a.updated=Date.now();save();renderMiniCal();}return;}
-    const dm=e.target.closest('[data-mcdim]');if(dm){const a=mcal().find(x=>x.id===dm.dataset.mcdim);if(a){a.dim=!a.dim;a.updated=Date.now();save();renderMiniCal();}return;}
+    const fd=e.target.closest('[data-mcdivfold]');if(fd){const a=mcal().find(x=>x.id===fd.dataset.mcdivfold);if(a){a.lukket=!a.lukket;a.updated=Date.now();save();renderMiniCal();}return;}
+    const dtm=e.target.closest('[data-mcdivtom]');if(dtm){mcalDivTomorrow(dtm.dataset.mcdivtom);return;}
+    const tmb=e.target.closest('[data-mctom]');if(tmb){mcalMoveTomorrow(tmb.dataset.mctom);return;}
+    const dgb=e.target.closest('[data-mcdg]');if(dgb){const a=mcal().find(x=>x.id===dgb.dataset.mcdg);if(a&&!a.div){if(a.todoDate){a.todoDate='';toast('Fjernet fra Dagens oppgaver');}else{a.todoDate=a.date||ymd(new Date());dgNormalize(a.todoDate);toast('Lagt til under Dagens oppgaver');}a.updated=Date.now();save();renderMiniCal();}return;}
+    const dn=e.target.closest('[data-mcdone]');if(dn){const a=dgFind(dn.dataset.mcdone);if(a){a.done=!a.done;a.updated=Date.now();save();renderMiniCal();}return;}
+    const dm=e.target.closest('[data-mcdim]');if(dm){const a=dgFind(dm.dataset.mcdim);if(a){a.dim=!a.dim;a.updated=Date.now();save();renderMiniCal();}return;}
     const cp=e.target.closest('[data-mccopy]');
     if(cp){const a=mcal().find(x=>x.id===cp.dataset.mccopy);
       if(a&&!a.div){const nb=Object.assign({},a,{id:uid(),title:(a.title||'')+' (kopi)',eventId:'',created:Date.now(),updated:Date.now(),ord:(a.ord!=null?a.ord:0)+0.5});
         mcal().push(nb);mcalNormalize(nb.date||'');save();toast('Avtale kopiert');renderMiniCal();}return;}
     const de=e.target.closest('[data-mcdivedit]');
-    if(de){const a=mcal().find(x=>x.id===de.dataset.mcdivedit);if(a){const nl=window.prompt('Tekst på skillelinja:',a.label||'');if(nl!==null){a.label=nl.trim();a.updated=Date.now();save();renderMiniCal();}}return;}
+    if(de){mcDivPop(de.dataset.mcdivedit);return;}
     const dl=e.target.closest('[data-mcdel]');
     if(dl){const id2=dl.dataset.mcdel;const a=mcal().find(x=>x.id===id2);
       if(a&&a.div){db.minical=mcal().filter(y=>y.id!==id2);save();renderMiniCal();return;}
@@ -4177,7 +4904,7 @@ function renderMiniCal(){
     const tc=e.target.closest('[data-mctodo]');
     if(tc){const td2=(db.todos||[]).find(x=>x.id===tc.dataset.mctodo);
       if(td2)todoSheet(td2.id);else toast('Fant ikke ToDo-en – synk den over først.');return;}
-    const ed=e.target.closest('[data-mcedit]');if(ed){mcalSheet(ed.dataset.mcedit);return;}
+    const ed=e.target.closest('[data-mcedit]');if(ed){const id3=ed.dataset.mcedit;if(mcal().some(x=>x.id===id3))mcalSheet(id3);else if((db.todos||[]).some(x=>x.id===id3))todoSheet(id3);return;}
   };
 }
 function tdNotePop(val0,onOk){
@@ -4200,6 +4927,56 @@ function tdNotePop(val0,onOk){
     const fs=e.target.closest('[data-tfs]');
     if(fs){if(ed){ed.focus();try{document.execCommand('styleWithCSS',false,true);}catch(_e){}document.execCommand('fontSize',false,fs.dataset.tfs);}return;}
     if(e.target.closest('[data-tok]')){const v=ed?(ed.innerHTML||''):'';ov.remove();onOk(v);return;}
+  });
+}
+function divKart(){db.divkart=db.divkart||[];return db.divkart;}
+function mcDivPop(id){
+  const a=mcal().find(x=>x.id===id);if(!a)return;
+  let _dtype=a.plain?'strek':'navn';
+  const list=mcal().filter(x=>(x.date||'')===(a.date||'')).sort(mcOrd);
+  const i=list.findIndex(x=>x.id===a.id);let n=0;
+  for(let j=i+1;j<list.length;j++){if(list[j].div)break;n++;}
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox">
+    <div class="mcbox-h"><span>Rediger skillelinje</span><button type="button" class="x" data-c>${svg('x')}</button></div>
+    <div class="f" style="margin-bottom:9px"><label>Type</label><div style="display:flex;gap:6px"><button type="button" class="chip ${_dtype==='navn'?'on':''}" data-dtype="navn">Med navn</button><button type="button" class="chip ${_dtype==='strek'?'on':''}" data-dtype="strek">— Kun strek</button></div></div>
+    <div class="f" id="mcDivNameWrap" style="margin-bottom:9px;${_dtype==='strek'?'display:none':''}"><label>Navn – søk i kartoteket eller skriv egen tekst</label><input id="mcDivLabel" value="${esc(a.label||'')}" placeholder="Skriv for å søke…" autocomplete="off"><div id="mcDivHits"></div></div>
+    <div class="f" style="margin-bottom:7px"><label>Flytt til dato · <span id="mcDivWd" style="text-transform:none;color:var(--petrol)">${a.date?esc(mcDayLbl(a.date)):''}</span></label><input id="mcDivDate" type="date" value="${esc(a.date||'')}"></div>
+    <div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px">${[['0','I dag'],['1','I morgen'],['3','+3 dager'],['man','Neste man.'],['7','+1 uke']].map(pr=>`<button type="button" class="chip" data-mcdq="${pr[0]}" style="padding:5px 10px;font-size:11px">${pr[1]}</button>`).join('')}</div>
+    ${n?`<div class="mc-mvinfo">${n} avtale${n===1?'':'r'} i mappa flyttes sammen med skillelinja.</div>`:''}
+    <div class="mctxt-btns"><button type="button" class="btn ghost" data-c>Avbryt</button><button type="button" class="btn pri" data-dok>${svg('check')}<span>Lagre</span></button></div>
+  </div>`;
+  document.body.appendChild(ov);
+  const _wd=()=>{const di=document.getElementById('mcDivDate');const w=document.getElementById('mcDivWd');if(di&&w)w.textContent=di.value?mcDayLbl(di.value):'';};
+  const _di=document.getElementById('mcDivDate');if(_di)_di.addEventListener('change',_wd);
+  {const li=document.getElementById('mcDivLabel');const hi=document.getElementById('mcDivHits');
+   if(li&&hi){const draw=()=>{const t2=li.value.trim().toLowerCase();
+     const hits=divKart().filter(k=>(!t2||k.name.toLowerCase().includes(t2))&&k.name.toLowerCase()!==t2).slice(0,20);
+     hi.innerHTML=hits.map(k=>`<div class="mc-hit" data-dkpick="${esc(k.name)}"><span>${esc(k.name)}</span><span class="pl">＋</span></div>`).join('');};
+   li.addEventListener('input',draw);li.addEventListener('focus',draw);
+   hi.addEventListener('click',e2=>{const h=e2.target.closest('[data-dkpick]');if(h){li.value=h.dataset.dkpick;hi.innerHTML='';}});}}
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();return;}
+    const dt=e.target.closest('[data-dtype]');if(dt){_dtype=dt.dataset.dtype;ov.querySelectorAll('[data-dtype]').forEach(x=>x.classList.toggle('on',x.dataset.dtype===_dtype));const nw=document.getElementById('mcDivNameWrap');if(nw)nw.style.display=_dtype==='strek'?'none':'';return;}
+    const q=e.target.closest('[data-mcdq]');
+    if(q){const v=q.dataset.mcdq;const di=document.getElementById('mcDivDate');let nd;
+      if(v==='man'){const d=new Date();const add=((8-d.getDay())%7)||7;d.setDate(d.getDate()+add);nd=ymd(d);}
+      else nd=mcAdd(ymd(new Date()),Number(v));
+      if(di){di.value=nd;_wd();}return;}
+    if(e.target.closest('[data-dok]')){
+      const label=_dtype==='strek'?'':(document.getElementById('mcDivLabel').value||'').trim();
+      const nd=document.getElementById('mcDivDate').value||'';
+      a.label=label;a.plain=_dtype==='strek';a.updated=Date.now();
+      if((a.date||'')!==nd){
+        const l2=mcal().filter(y=>(y.date||'')===(a.date||'')).sort(mcOrd);
+        const ii=l2.findIndex(y=>y.id===a.id);
+        const grp=[];for(let j=ii+1;j<l2.length;j++){if(l2[j].div)break;grp.push(l2[j]);}
+        const tgt=mcal().filter(y=>(y.date||'')===nd);
+        let base=(tgt.length?Math.max(...tgt.map(y=>y.ord||0)):0)+1;
+        a.date=nd;a.ord=base++;
+        grp.forEach(x2=>{x2.date=nd;x2.ord=base++;x2.updated=Date.now();});
+      }
+      save();ov.remove();renderMiniCal();return;}
   });
 }
 function mcTextPop(kind,val0,onOk){
@@ -4225,15 +5002,25 @@ function mcTextPop(kind,val0,onOk){
 function mcalSheet(id,preset){
   const a=id?mcal().find(x=>x.id===id):Object.assign({date:ymd(new Date()),title:'',note:'',done:false,cal:false,todoId:'',todoTitle:''},preset||{});
   if(!a)return;
-  let _linked=a.todoId?{id:a.todoId,title:a.todoTitle||''}:null;
+  let _links=Array.isArray(a.todoLinks)&&a.todoLinks.length?a.todoLinks.map(x=>({id:x.id,title:x.title||''})):(a.todoId?[{id:a.todoId,title:a.todoTitle||''}]:[]);
   let _noteHtml=/[<]/.test(a.note||'')?(a.note||''):esc(a.note||'').replace(/\n/g,'<br>');
+  let _tddPrio=a.todoPrio||'';
+  const _tddDiv0=(()=>{if(!a.todoDate||!a.id)return '';let cur='';for(const it of dagItems(a.todoDate)){if(it.div){cur=it.plain?'':it.id;}else if(it.id===a.id)return cur;}return '';})();
+  let _tddDivSel=_tddDiv0;
   const etab=(k,ic,l,on)=>`<button type="button" class="td-etab${on?' on':''}" data-mcavtab="${k}">${ic}<span>${l}</span><span data-mcdot="${k}"></span></button>`;
   sheetOpen(id?'Rediger avtale':'Ny avtale',`
-    <div class="td-etabs">${etab('avtale',svg('edit'),'Avtale',1)}${etab('dato',svg('cal'),'Dato')}${etab('notat',svg('note'),'Notat')}${etab('knyt',svg('link'),'Knytning')}</div>
+    <div class="td-etabs">${etab('avtale',svg('edit'),'Avtale',1)}${etab('dagens',svg('sun'),'Dagens ToDo')}${etab('dato',svg('cal'),'Dato')}${etab('notat',svg('note'),'Notat')}${etab('knyt',svg('link'),'Knytning')}</div>
     <div class="td-panes">
       <div class="td-pane on" data-mcavpane="avtale">
+        <div class="td-sect"><div class="td-sect-h">${svg('clock')}<span>Klokkeslett</span><span class="td-sect-r" style="font-size:10px;color:var(--muted)">Valgfritt</span></div><div style="display:flex;gap:5px;align-items:center;flex-wrap:wrap"><input id="mcKlokke" type="time" value="${esc(a.klokke||'')}" style="width:130px;flex:0 0 auto"><button type="button" class="mc-sm2del" data-mckq="clear">✕ Tøm</button></div></div>
         <div class="td-sect"><div class="td-sect-h">${svg('edit')}<span>Hva gjelder avtalen?</span></div><div class="mc-titlewrap"><input id="mcTitle" value="${esc(a.title||'')}" placeholder="Trykk for å skrive…" readonly data-mctitlepop><button type="button" class="mc-eye" data-mctitlepop title="Åpne i stort felt">${svg('eye')}</button></div></div>
         <div class="td-sect"><label class="mc-chkline" style="margin:0"><input type="checkbox" id="mcDone" ${a.done?'checked':''}> Gjennomført</label></div>
+      </div>
+      <div class="td-pane" data-mcavpane="dagens">
+        <div class="mc-dcard"><div class="mc-dcard-h">${svg('flag')}<span>Prioritet</span></div><div class="mc-dcard-b"><div class="mc-prow">${[['A','Må','#c0413b'],['B','Bør','#d98324'],['C','Kan vente','#2f8f5b']].map(pr=>`<button type="button" class="mc-pb${(a.todoPrio||'')===pr[0]?' on':''}" data-mcprio="${pr[0]}"><span class="b" style="background:${pr[2]}">${pr[0]}</span>${pr[1]}</button>`).join('')}</div></div></div>
+        <div class="mc-dcard"><div class="mc-dcard-h">${svg('sun')}<span>Vis under Dagens oppgaver</span></div><div class="mc-dcard-b"><input id="mcTdd" type="date" value="${esc(a.todoDate||'')}" style="width:100%"><div id="mcTddWd" style="font-size:12.5px;font-weight:700;color:var(--petrol);margin-top:7px"></div></div></div>
+        <div class="mc-dcard"><div class="mc-dcard-h">${svg('clock')}<span>Hurtigvalg</span></div><div class="mc-dcard-b"><div style="display:flex;gap:5px;flex-wrap:wrap">${[['0','I dag'],['1','I morgen'],['3','+3 dager'],['man','Neste man.'],['7','+1 uke'],['clear','✕ Fjern']].map(pr=>`<button type="button" class="mc-qb2${pr[0]==='clear'?' del':''}" data-mcq2="${pr[0]}" style="flex:0 0 auto;padding:7px 11px">${pr[1]}</button>`).join('')}</div></div></div>
+        <div class="mc-dcard"><div class="mc-dcard-h">${svg('grip')}<span>Legg under skillelinje</span></div><div class="mc-dcard-b"><select id="mcTddDiv" style="width:100%"></select></div></div>
       </div>
       <div class="td-pane" data-mcavpane="dato">
         <div class="mc-dcard"><div class="mc-dcard-h">${svg('cal')}<span>Valgt dato</span></div><div class="mc-dcard-b"><input id="mcDate" type="date" value="${esc(a.date||'')}" style="width:100%"><div id="mcDateWd" style="font-size:12.5px;font-weight:700;color:var(--petrol);margin-top:7px"></div></div></div>
@@ -4261,28 +5048,42 @@ function mcalSheet(id,preset){
     set('avtale',!!(g('mcDone')&&g('mcDone').checked));
     set('dato',!!(g('mcDate')&&g('mcDate').value));
     set('notat',!!mcNoteText(_noteHtml));
-    set('knyt',!!_linked||!!(g('mcCal')&&g('mcCal').checked));
+    set('knyt',_links.length>0||!!(g('mcCal')&&g('mcCal').checked));
+    set('dagens',!!((g('mcTdd')&&g('mcTdd').value)||_tddPrio));
+    const twd=g('mcTddWd');if(twd){const dv2=g('mcTdd')?g('mcTdd').value:'';twd.textContent=dv2?mcDayLbl(dv2):'Ingen dato valgt';}
     const wd=g('mcDateWd');if(wd){const dv=g('mcDate')?g('mcDate').value:'';wd.textContent=dv?mcDayLbl(dv):'Ingen dato valgt';}
     const pr=g('mcNotePr');if(pr){if(pr.innerHTML!==_noteHtml)pr.innerHTML=_noteHtml;pr.classList.toggle('tom',!mcNoteText(_noteHtml));}
   };
   const drawTB=()=>{
     const b=document.getElementById('mcTodoBox');if(!b)return;
-    b.innerHTML=_linked
-      ?`<span class="mc-lchip">${svg('mobile')}<span>${esc(_linked.title||'ToDo')}</span><button type="button" data-mctlx>✕</button></span>`
-      :`<input id="mcTodoQ" placeholder="Søk i ToDo-ene…" autocomplete="off"><div id="mcTodoRes"></div>`;
+    b.innerHTML=`${_links.length?`<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px">${_links.map(l=>`<span class="mc-lchip${_links.length>1?' sm':''}" data-mctlview="${l.id}" style="cursor:pointer">${svg('mobile')}<span>${esc(l.title||'ToDo')}</span><button type="button" data-mctlx="${l.id}">✕</button></span>`).join('')}</div>`:''}<input id="mcTodoQ" placeholder="Søk i ToDo-ene for å knytte…" autocomplete="off"><div id="mcTodoRes"></div>`;
     const q=document.getElementById('mcTodoQ');
     if(q)q.addEventListener('input',()=>{
       const t=q.value.trim().toLowerCase();const res=document.getElementById('mcTodoRes');if(!res)return;
       if(!t){res.innerHTML='';return;}
-      const hits=(db.todos||[]).filter(x=>(x.title||'').toLowerCase().includes(t)).slice(0,6);
+      const hits=(db.todos||[]).filter(x=>(x.title||'').toLowerCase().includes(t)&&!_links.some(l=>l.id===x.id)).slice(0,6);
       res.innerHTML=hits.length?hits.map(x=>`<div class="mc-hit" data-mctpick="${x.id}">${svg('mobile')}<span>${esc(x.title||'')}</span><span class="pl">+</span></div>`).join(''):'<div class="muted" style="font-size:12px;padding:6px 2px">Ingen treff</div>';
     });
     updDots();
   };
   drawTB();
+  const _tddDivRefresh=()=>{const sel2=document.getElementById('mcTddDiv');if(!sel2)return;const d2=(document.getElementById('mcTdd')||{}).value||'';const divs=d2?dagItems(d2).filter(it=>it.div&&!it.plain):[];sel2.innerHTML=`<option value="">Øverst (ingen skillelinje)</option>`+divs.map(dv=>`<option value="${dv.id}"${dv.id===_tddDivSel?' selected':''}>${esc(dv.label||'(uten navn)')}</option>`).join('');if(!divs.some(dv=>dv.id===_tddDivSel))_tddDivSel=sel2.value='';};
+  _tddDivRefresh();
+  {const sel2=document.getElementById('mcTddDiv');if(sel2)sel2.addEventListener('change',()=>{_tddDivSel=sel2.value;});}
+  {const ti=document.getElementById('mcTdd');if(ti)ti.addEventListener('change',()=>{updDots();_tddDivRefresh();});}
   body.onclick=e=>{
     const tb=e.target.closest('[data-mcavtab]');
     if(tb){const k=tb.dataset.mcavtab;body.querySelectorAll('[data-mcavtab]').forEach(x=>x.classList.toggle('on',x.dataset.mcavtab===k));body.querySelectorAll('[data-mcavpane]').forEach(pn=>pn.classList.toggle('on',pn.dataset.mcavpane===k));updDots();return;}
+    const pb2=e.target.closest('[data-mcprio]');
+    if(pb2){_tddPrio=_tddPrio===pb2.dataset.mcprio?'':pb2.dataset.mcprio;body.querySelectorAll('[data-mcprio]').forEach(x=>x.classList.toggle('on',x.dataset.mcprio===_tddPrio));updDots();return;}
+    const kq=e.target.closest('[data-mckq]');
+    if(kq){const ki=document.getElementById('mcKlokke');if(ki)ki.value=kq.dataset.mckq==='clear'?'':kq.dataset.mckq;return;}
+    const q2=e.target.closest('[data-mcq2]');
+    if(q2){const inp2=document.getElementById('mcTdd');if(!inp2)return;const k2=q2.dataset.mcq2;
+      if(k2==='clear'){inp2.value='';}
+      else if(k2==='man'){const d=new Date();const day=(d.getDay()+6)%7;d.setDate(d.getDate()+(7-day));inp2.value=ymd(d);}
+      else inp2.value=mcAdd(ymd(new Date()),Number(k2));
+      updDots();if(typeof _tddDivRefresh==='function')_tddDivRefresh();return;}
     const q=e.target.closest('[data-mcq]');
     if(q){const inp=document.getElementById('mcDate');if(!inp)return;
       const k=q.dataset.mcq;
@@ -4290,8 +5091,9 @@ function mcalSheet(id,preset){
       else if(k==='man'){const d=new Date();const day=(d.getDay()+6)%7;d.setDate(d.getDate()+(7-day));inp.value=ymd(d);}
       else inp.value=mcAdd(ymd(new Date()),Number(k));
       updDots();return;}
-    const tp=e.target.closest('[data-mctpick]');if(tp){const td2=(db.todos||[]).find(x=>x.id===tp.dataset.mctpick);if(td2){_linked={id:td2.id,title:td2.title||''};drawTB();}return;}
-    if(e.target.closest('[data-mctlx]')){_linked=null;drawTB();return;}
+    const tp=e.target.closest('[data-mctpick]');if(tp){const td2=(db.todos||[]).find(x=>x.id===tp.dataset.mctpick);if(td2&&!_links.some(l=>l.id===td2.id)){_links.push({id:td2.id,title:td2.title||''});drawTB();}return;}
+    {const lx=e.target.closest('[data-mctlx]');if(lx){_links=_links.filter(l=>l.id!==lx.dataset.mctlx);drawTB();return;}}
+    {const lv=e.target.closest('[data-mctlview]');if(lv){const tid=lv.dataset.mctlview;if(id&&(db.todos||[]).some(x=>x.id===tid)){todoSheet(tid);_todoRetAv=id;}else{todoPeek(tid);}return;}}
     if(e.target.closest('[data-mctitlepop]')){mcTextPop('tittel',(document.getElementById('mcTitle')||{}).value||'',v=>{const i=document.getElementById('mcTitle');if(i)i.value=v.trim();});return;}
     if(e.target.closest('[data-mcnotepop]')){mcTextPop('notat',_noteHtml,v=>{_noteHtml=v;updDots();});return;}
   };
@@ -4301,9 +5103,18 @@ function mcalSheet(id,preset){
   document.getElementById('mcSave').onclick=()=>{
     const title=document.getElementById('mcTitle').value.trim();
     if(!title){toast('Skriv en beskrivelse.');return;}
-    const obj={title,date:document.getElementById('mcDate').value,note:_noteHtml,done:document.getElementById('mcDone').checked,cal:document.getElementById('mcCal').checked,todoId:_linked?_linked.id:'',todoTitle:_linked?_linked.title:'',updated:Date.now()};
-    if(id){Object.assign(mcal().find(x=>x.id===id),obj);}
-    else{const nb=Object.assign({id:uid(),created:Date.now(),eventId:'',ord:1e8},obj);mcal().push(nb);mcalNormalize(nb.date||'');}
+    const obj={title,klokke:(document.getElementById('mcKlokke')||{}).value||'',date:document.getElementById('mcDate').value,todoDate:(document.getElementById('mcTdd')||{}).value||'',todoPrio:_tddPrio,note:_noteHtml,done:document.getElementById('mcDone').checked,cal:document.getElementById('mcCal').checked,todoId:_links[0]?_links[0].id:'',todoTitle:_links[0]?_links[0].title:'',todoLinks:_links.map(l=>({id:l.id,title:l.title||''})),updated:Date.now()};
+    let a2;
+    if(id){a2=mcal().find(x=>x.id===id);Object.assign(a2,obj);}
+    else{a2=Object.assign({id:uid(),created:Date.now(),eventId:'',ord:1e8},obj);mcal().push(a2);mcalNormalize(a2.date||'');}
+    if(obj.todoDate&&(_tddDivSel!==_tddDiv0||((a.todoDate||'')!==obj.todoDate&&_tddDivSel))){
+      const list2=dagItems(obj.todoDate).filter(x2=>x2.id!==a2.id);
+      if(_tddDivSel){
+        const di2=list2.findIndex(x2=>x2.id===_tddDivSel);
+        if(di2>=0){let end=list2[di2].dord!=null?list2[di2].dord:0;for(let j2=di2+1;j2<list2.length;j2++){if(list2[j2].div)break;end=list2[j2].dord!=null?list2[j2].dord:end;}a2.dord=end+0.5;}
+      }else{a2.dord=-1;}
+      dgNormalize(obj.todoDate);
+    }
     save();sheetClose();toast(id?'Avtale oppdatert':'Avtale lagt til');renderMiniCal();
   };
 }
@@ -4318,6 +5129,37 @@ function render(){
   else if(tab==='abc')renderAbcTab();
   else if(tab==='timer')renderTimerTab();
   else renderSyncTab();
+}
+function dkPop(){
+  const ov=document.createElement('div');ov.className='mcov';
+  ov.innerHTML=`<div class="mcbox"><div class="mcbox-h"><span>⠿ Skillelinje-kartotek</span><button type="button" class="x" data-c>${svg('x')}</button></div><div id="dkPopB"></div></div>`;
+  document.body.appendChild(ov);
+  const draw=()=>{
+    const b=document.getElementById('dkPopB');if(!b)return;
+    const rows=divKart().map(k2=>{const u=mcal().filter(x=>x.div&&(x.label||'').toLowerCase()===(k2.name||'').toLowerCase()).length;return `<div class="dk-row" data-dkid="${k2.id}"><span class="mc-grip" data-dkgrip>${svg('grip')}</span><span class="dk-n">${esc(k2.name)}</span><span class="dk-u">${u?('Brukt '+u+' sted'+(u===1?'':'er')):''}</span><button type="button" class="ib" data-dkedit="${k2.id}">${svg('edit')}</button><button type="button" class="ib" data-dkdel="${k2.id}" style="color:var(--red)">${svg('trash')}</button></div>`;}).join('');
+    b.innerHTML=`<div id="dkList" style="max-height:50vh;overflow:auto">${rows||'<div class="td-sectempty">Ingen navn i kartoteket enda.</div>'}</div><div style="display:flex;gap:6px;margin-top:8px"><input id="dkNew" placeholder="Nytt navn…" autocomplete="off" style="flex:1"><button type="button" class="btn pri" data-dkadd style="flex:0 0 auto">${svg('plus')}<span>Legg til</span></button></div><div class="td-secthint" style="margin-top:6px">Navnene dukker opp i søket når du lager skillelinjer i Mini kalenderen, Dagens oppgaver og Kjøp – og synkes med TettPå 2.0.</div>`;
+    b.querySelectorAll('[data-dkgrip]').forEach(g=>{g.addEventListener('pointerdown',e3=>{
+      e3.preventDefault();
+      const row=g.closest('[data-dkid]');if(!row)return;
+      const c=document.getElementById('dkList');row.classList.add('mc-dragging');
+      const mv=ev=>{const others=[...c.querySelectorAll('[data-dkid]')].filter(x=>x!==row);let placed=false;
+        for(const o of others){const r=o.getBoundingClientRect();if(ev.clientY<r.top+r.height/2){c.insertBefore(row,o);placed=true;break;}}
+        if(!placed&&others.length)others[others.length-1].after(row);};
+      const up=()=>{document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);row.classList.remove('mc-dragging');
+        const ord=[...c.querySelectorAll('[data-dkid]')].map(x=>x.dataset.dkid);
+        db.divkart=ord.map(id2=>divKart().find(x=>x.id===id2)).filter(Boolean);
+        save();draw();};
+      document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
+    });});
+  };
+  draw();
+  ov.addEventListener('click',e=>{
+    if(e.target===ov||e.target.closest('[data-c]')){ov.remove();render();return;}
+    if(e.target.closest('[data-dkadd]')){const i2=document.getElementById('dkNew');const nm=(i2.value||'').trim();if(!nm)return;divKart().push({id:uid(),name:nm});save();toast('Lagt til i kartoteket');draw();return;}
+    const ed=e.target.closest('[data-dkedit]');if(ed){const k2=divKart().find(x=>x.id===ed.dataset.dkedit);if(k2){const nv2=window.prompt('Navn:',k2.name||'');if(nv2!=null&&nv2.trim()){k2.name=nv2.trim();save();draw();}}return;}
+    const dl=e.target.closest('[data-dkdel]');if(dl){if(confirm('Fjerne navnet fra kartoteket?')){db.divkart=divKart().filter(x=>x.id!==dl.dataset.dkdel);save();draw();}return;}
+  });
+  ov.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target&&e.target.id==='dkNew'){e.preventDefault();const b2=ov.querySelector('[data-dkadd]');if(b2)b2.click();}});
 }
 function renderAbcTab(){
   const v=document.getElementById('view');
@@ -4335,11 +5177,49 @@ function renderAbcTab(){
   const groups=cs.map(([k,l,c])=>{
     const items=open.filter(t=>(t.prio||cid0)===k).sort(byOrd);
     const rows=items.length?items.map(t=>`<div class="abcrow" data-abcid="${t.id}"><span class="abcgrip" data-stop>${svg('grip')}</span><button type="button" class="abcchk" data-done="${t.id}"></button><span class="n" data-edit="${t.id}">${esc(t.title||'')}</span>${sw(t)}</div>`).join(''):`<div class="abcempty">Ingen oppgaver her – dra noen hit.</div>`;
-    return `<div class="abcg${closed.has(k)?' closed':''}"><div class="abcg-h" style="background:${c}" data-abcgtoggle="${esc(k)}"><span class="bb">${esc(k)}</span>${esc(l)}<span class="c">${items.length}</span><span class="abcg-chev">${svg('chev')}</span></div><div class="abcg-b" data-cat="${esc(k)}" style="border-color:${c}">${rows}</div></div>`;
+    return `<div class="abcg${closed.has(k)?' closed':''}" style="border-left-color:${c}"><div class="abcg-h" data-abcgtoggle="${esc(k)}"><span class="bb" style="background:${c}">${esc(k)}</span>${esc(l)}<span class="c">${items.length}</span><span class="abcg-chev">${svg('chev')}</span></div><div class="abcg-b" data-cat="${esc(k)}">${rows}</div></div>`;
   }).join('');
   const doneN=(db.todos||[]).filter(t=>t.done).length;
-  v.innerHTML=chips+tools+groups+(doneN?`<div class="abcdonenote">${doneN} fullført${doneN===1?'':'e'} vises ikke her.</div>`:'')+`<div class="build">TettPå iPhone · versjon ${BUILD_NO} · ${BUILD_DATE}</div>`;
-  wireAbcTab(v);
+  const sub=db.meta.abcSubTab==='kat'?'kat':db.meta.abcSubTab==='skille'?'skille':'abc';
+  const subTabs=`<div class="abc-subtabs"><button type="button" class="ast${sub==='abc'?' on':''}" data-abcsub="abc">A-B-C</button><button type="button" class="ast${sub==='kat'?' on':''}" data-abcsub="kat">Kategorier</button><button type="button" class="ast${sub==='skille'?' on':''}" data-abcsub="skille">Skillelinjer</button></div>`;
+  let inner='';
+  if(sub==='kat'){
+    inner=`<div id="katKart">${cats().map(cat2=>{const k=cat2[0],l=cat2[1],c=cat2[2];return `<div class="krow2"><span class="dot" style="background:${c}"></span><span class="k2n">${esc(l)}</span><span class="k2u">${catCount(k)} oppg.</span><button type="button" class="ib" data-catedit="${esc(k)}">${svg('edit')}</button><button type="button" class="ib" data-catdel="${esc(k)}" style="color:var(--red)">${svg('trash')}</button></div>`;}).join('')}</div><button type="button" class="btn pri" data-katopen style="width:100%;margin-top:8px">${svg('tag')}<span>Ny kategori / endre rekkefølge</span></button>`;
+  }else if(sub==='skille'){
+    const dkRows2=divKart().map((k2,ix)=>{const u=mcal().filter(x=>x.div&&(x.label||'').toLowerCase()===(k2.name||'').toLowerCase()).length;return `<div class="dk-row" data-dkid="${k2.id}"><span class="mc-grip" data-dkgrip>${svg('grip')}</span><span class="dk-nr">${ix+1}</span><span class="dk-n">${esc(k2.name)}</span><span class="dk-u2">${u?(u+' sted'+(u===1?'':'er')):'–'}</span><button type="button" class="ib" data-dkedit="${k2.id}">${svg('edit')}</button><button type="button" class="ib" data-dkdel="${k2.id}" style="color:var(--red)">${svg('trash')}</button></div>`;}).join('');
+    inner=`<div style="display:flex;gap:6px;margin-bottom:8px"><input id="dkNew" placeholder="＋ Nytt navn i kartoteket… (Enter)" autocomplete="off" style="flex:1"><button type="button" class="btn pri" data-dkadd style="flex:0 0 auto">${svg('plus')}</button></div><div id="dkList">${dkRows2||'<div class="td-sectempty">Ingen navn i kartoteket enda.</div>'}</div><div class="td-secthint" style="margin-top:6px">Navnene dukker opp i søket når du lager skillelinjer i Mini kalenderen, Dagens oppgaver og Kjøp – og synkes med TettPå 2.0.</div>`;
+  }else{
+    inner=groups+(doneN?`<div class="abcdonenote">${doneN} fullført${doneN===1?'':'e'} vises ikke her.</div>`:'');
+  }
+  v.innerHTML=subTabs+inner+`<div class="build">TettPå iPhone · versjon ${BUILD_NO} · ${BUILD_DATE}</div>`;
+  if(sub==='abc')wireAbcTab(v);
+  v.querySelectorAll('[data-abcsub]').forEach(b=>b.onclick=()=>{db.meta.abcSubTab=b.dataset.abcsub;save();render();});
+  if(sub==='kat'){
+    v.querySelectorAll('[data-catedit]').forEach(b=>b.onclick=()=>{const k=b.dataset.catedit;const cm=cats().find(c=>c[0]===k);if(cm){catSheetEdit=k;catSheetColor=cm[2];catSheetView='edit';renderCatSheet();}});
+    v.querySelectorAll('[data-catdel]').forEach(b=>b.onclick=()=>{catSheetEdit=b.dataset.catdel;catSheetView='del';renderCatSheet();});
+    const ko=v.querySelector('[data-katopen]');if(ko)ko.onclick=()=>openCatSheet();
+  }
+  if(sub==='skille'){
+    const ad=v.querySelector('[data-dkadd]');
+    if(ad)ad.onclick=()=>{const i2=document.getElementById('dkNew');const nm=(i2.value||'').trim();if(!nm)return;divKart().push({id:uid(),name:nm});save();toast('Lagt til i kartoteket');render();};
+    const ni=v.querySelector('#dkNew');
+    if(ni)ni.addEventListener('keydown',e2=>{if(e2.key==='Enter'){e2.preventDefault();if(ad)ad.click();}});
+    v.querySelectorAll('[data-dkedit]').forEach(b=>b.onclick=()=>{const k2=divKart().find(x=>x.id===b.dataset.dkedit);if(!k2)return;const nv2=window.prompt('Navn:',k2.name||'');if(nv2!=null&&nv2.trim()){k2.name=nv2.trim();save();render();}});
+    v.querySelectorAll('[data-dkdel]').forEach(b=>b.onclick=()=>{if(confirm('Fjerne navnet fra kartoteket?')){db.divkart=divKart().filter(x=>x.id!==b.dataset.dkdel);save();render();}});
+    v.querySelectorAll('[data-dkgrip]').forEach(g=>{g.addEventListener('pointerdown',e3=>{
+      e3.preventDefault();
+      const row=g.closest('[data-dkid]');if(!row)return;
+      const c=document.getElementById('dkList');row.classList.add('mc-dragging');
+      const mv=ev=>{const others=[...c.querySelectorAll('[data-dkid]')].filter(x=>x!==row);let placed=false;
+        for(const o of others){const r=o.getBoundingClientRect();if(ev.clientY<r.top+r.height/2){c.insertBefore(row,o);placed=true;break;}}
+        if(!placed&&others.length)others[others.length-1].after(row);};
+      const up=()=>{document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);row.classList.remove('mc-dragging');
+        const ord=[...c.querySelectorAll('[data-dkid]')].map(x=>x.dataset.dkid);
+        db.divkart=ord.map(id2=>divKart().find(x=>x.id===id2)).filter(Boolean);
+        save();render();};
+      document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);
+    });});
+  }
 }
 function abcGroupPop(k){
   const m=abcCats().find(c=>c[0]===k);if(!m)return;
